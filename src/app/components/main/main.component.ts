@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main.component.scss']
 })
 export class MainComponent implements OnInit {
-
+  isMobileDevice = window.innerWidth < 720;
   constructor() { }
 
   ngOnInit(): void {
