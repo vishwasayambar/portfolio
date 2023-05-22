@@ -9,6 +9,8 @@ import { ContactComponent } from './components/contact/contact.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from "./module/angular-material/angular-material.module";
+import { SkillsComponent } from './components/skills/skills.component';
+import { SocialComponent } from './components/social/social.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { AngularMaterialModule } from "./module/angular-material/angular-materia
     AboutComponent,
     ExperianceComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    SkillsComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,
