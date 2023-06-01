@@ -1,8 +1,133 @@
-<div class="container-fluid d-flex flex-column justify-content-center my-5 flex-wrap">
-	<h2 class="text-center">Tech Stack</h2>
-	<div class="d-flex justify-content-center">
-		<span class="badge text-bg-primary " >Frontend</span>
-		<span class="badge text-bg-primary ">Backend</span>
-		<span class="badge text-bg-primary ">Tools</span>
+<div class="container-fluid mb-5">
+	<div class="container-fluid d-flex flex-column justify-content-center my-5 flex-wrap">
+		<h2 class="text-center">Tech Stack</h2>
+		<div class="d-flex justify-content-center">
+			<div class="example-button-row">
+				<button mat-button extended color="primary">
+					<mat-icon>favorite</mat-icon>
+					Frontend
+				</button>
+				<button mat-button extended color="accent">
+					<mat-icon>favorite</mat-icon>
+					Frontend
+				</button>
+				<button mat-button extended color="warn">
+					<mat-icon>favorite</mat-icon>
+					Tools
+				</button>
+			</div>
+		</div>
+	</div>
+	<div>
+		<section class="container" [ngClass]="isMobileDevice ? '': 'w-50'">
+			<div class="border border-1">
+				<div class="d-flex justify-content-around flex-wrap gap-lg-5 gap-md-2 gap-sm-2 mx-lg-5">
+					<div class="">
+						<button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+							<mat-icon>delete</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+							<mat-icon>bookmark</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab color="warn" aria-label="Example icon button with a home icon">
+							<mat-icon>home</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab disabled aria-label="Example icon button with a heart icon">
+							<mat-icon>favorite</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab disabled aria-label="Example icon button with a heart icon">
+							<mat-icon>favorite</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+							<mat-icon>delete</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+							<mat-icon>bookmark</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab color="warn" aria-label="Example icon button with a home icon">
+							<mat-icon>home</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab disabled aria-label="Example icon button with a heart icon">
+							<mat-icon>favorite</mat-icon>
+						</button>
+					</div>
+					<div class="">
+						<button mat-fab disabled aria-label="Example icon button with a heart icon">
+							<mat-icon>favorite</mat-icon>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>
+<div class="container" [ngClass]="isMobileDevice ? '': 'w-50'">
+	<div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3">
+		<div class="">
+			<button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+				<mat-icon>delete</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+				<mat-icon>bookmark</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab color="warn" aria-label="Example icon button with a home icon">
+				<mat-icon>home</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab disabled aria-label="Example icon button with a heart icon">
+				<mat-icon>favorite</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab disabled aria-label="Example icon button with a heart icon">
+				<mat-icon>favorite</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab color="primary" aria-label="Example icon button with a delete icon">
+				<mat-icon>delete</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab color="accent" aria-label="Example icon button with a bookmark icon">
+				<mat-icon>bookmark</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab color="warn" aria-label="Example icon button with a home icon">
+				<mat-icon>home</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab disabled aria-label="Example icon button with a heart icon">
+				<mat-icon>favorite</mat-icon>
+			</button>
+		</div>
+		<div class="">
+			<button mat-fab disabled aria-label="Example icon button with a heart icon">
+				<mat-icon>favorite</mat-icon>
+			</button>
+		</div>
 	</div>
 </div>
