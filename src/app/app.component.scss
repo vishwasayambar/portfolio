@@ -6,3 +6,10 @@
 .example-spacer {
 	flex: 1 1 auto;
 	}
+
+.navbar{
+		backdrop-filter: blur(8px);
+	}
+.section{
+	background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
+	}
