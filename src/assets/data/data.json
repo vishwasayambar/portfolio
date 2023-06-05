@@ -52,9 +52,19 @@
 			"category": "Frontend"
 		},
 		{
+			"name": "node",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
 			"name": "Firebase",
 			"image": "https://img.icons8.com/color/144/null/firebase.png",
 			"category": "Backend"
+		},
+		{
+			"name": "GitHub",
+			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"category": "Tools"
 		},
 		{
 			"name": "GitHub",
@@ -66,7 +76,7 @@
 		{
 			"name": "Project MERN",
 			"techstack": "HTML5, CSS3, JavaScript, jQuery",
-			"category": "MERN Stack",
+			"category": "WebProjects",
 			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
 			"links": {
 				"code": "dc",
@@ -77,7 +87,7 @@
 		{
 			"name": "Project FLUTTER",
 			"techstack": "Flutter, Dart, Firebase",
-			"category": "Flutter",
+			"category": "Angular",
 			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
 			"links": {
 				"code": "",
@@ -88,7 +98,18 @@
 		{
 			"name": "Project FLUTTER",
 			"techstack": "Flutter, Dart, Firebase",
-			"category": "Flutter",
+			"category": "Angular",
+			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+			"links": {
+				"code": "",
+				"video": "",
+				"visit": ""
+			}
+		},
+		{
+			"name": "Project FLUTTER",
+			"techstack": "Flutter, Dart, Firebase",
+			"category": "Angular",
 			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
 			"links": {
 				"code": "",
@@ -99,7 +120,7 @@
 		{
 			"name": "Project LAMP",
 			"techstack": "PHP, MySQL, HTML5, CSS3, Bootstrap, JavaScript",
-			"category": "LAMP Stack",
+			"category": "Blogs",
 			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
 			"links": {
 				"code": "",
