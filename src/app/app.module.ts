@@ -1,3 +1,4 @@
+import { NgOptimizedImage } from "@angular/common";
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularMaterialModule } from "./module/angular-material/angular-material.module";
 import { SkillsComponent } from './components/skills/skills.component';
 import { SocialComponent } from './components/social/social.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +23,16 @@ import { SocialComponent } from './components/social/social.component';
     ContactComponent,
     FooterComponent,
     SkillsComponent,
-    SocialComponent
+    SocialComponent,
+    ProjectsComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    AngularMaterialModule,
-    BrowserAnimationsModule,
-  ],
+	imports: [
+		BrowserModule,
+		AppRoutingModule,
+		AngularMaterialModule,
+		BrowserAnimationsModule,
+		NgOptimizedImage,
+	],
   providers: [],
   bootstrap: [AppComponent]
 })

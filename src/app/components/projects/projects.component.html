@@ -1,0 +1,69 @@
+<div class="section">
+	<div class="container-fluid mb-5">
+		<div class="container-fluid d-flex flex-column justify-content-center my-5 flex-wrap">
+			<h2 class="text-center">Works</h2>
+			<div class="d-flex justify-content-center">
+				<div class="example-button-row d-flex justify-content-center flex-wrap">
+					<button mat-button color="primary" class="px-3 bg-light m-1 rounded m-0"
+							(click)="onChange('WebProjects')">
+						Web Projects
+					</button>
+					<button mat-button color="accent" class="px-3 bg-light m-1 rounded m-0"
+							(click)="onChange('laravel')">
+						laravel
+					</button>
+					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0" (click)="onChange('Angular')">
+						Angular
+					</button>
+					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0" (click)="onChange('Blogs')">
+						Blogs
+					</button>
+					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0"
+							(click)="onChange('BasicWebApp')">
+						Basic Web App
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container" [ngClass]="isMobileDevice ? '': 'w-75'">
+		<div [ngSwitch]="category">
+			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'WebProjects'">
+				<div class="d-flex align-items-center flex-column" *ngFor="let item of webProjects">
+					<div class="card">
+						<img [src]="item.image" width="330" height="200" class="">
+						<div class="slider"></div>
+						<a href="#" class="link-icon"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+					</div>
+					<div class="card-detail">
+						<h6 class="text-center">{{item?.name}}</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'Angular'">
+				<div class="d-flex align-items-center flex-column" *ngFor="let item of angular">
+					<div class="card">
+						<img [src]="item.image" width="330" height="200" class="">
+						<div class="slider"></div>
+					<a href="#" class="link-icon"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+					</div>
+					<div class="card-detail">
+						<h6 class="text-center">{{item?.name}}</h6>
+					</div>
+				</div>
+			</div>
+			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'Blogs'">
+				<div class="d-flex align-items-center flex-column" *ngFor="let item of blogs">
+					<div class="card">
+						<img [src]="item.image" width="330" height="200" class="">
+						<div class="slider"></div>
+						<a href="#" class="link-icon"><i class="fa-regular fa-arrow-up-right-from-square"></i></a>
+					</div>
+					<div class="card-detail">
+						<h6 class="text-center">{{item?.name}}</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

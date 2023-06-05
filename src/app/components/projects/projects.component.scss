@@ -1,0 +1,46 @@
+.card {
+	position: relative;
+	display: inline-block;
+	width: 330px;
+	height: 200px;
+	}
+
+.image {
+	position: relative;
+	z-index: 1;
+	}
+
+.slider {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	background-color: rgba(128, 128, 128, 0.5); /* Transparent gray */
+	transition: width 0.3s ease-out;
+	}
+
+.card:hover .slider {
+	width: 100%;
+	}
+
+.link-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	width: 40px;
+	height: 40px;
+	background-image: url('/assets/images/link-removebg-preview.png'); /* Replace with your icon */
+	background-size: cover;
+	opacity: 0.8;
+	}
+
+.card:hover .link-icon {
+	display: block;
+	}
+
+.card:hover .slider {
+	width: 100%;
+	}
