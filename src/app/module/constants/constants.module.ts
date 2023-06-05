@@ -1,7 +1,11 @@
 export interface skill {
-  name: string;
-  image: string;
-  category: string;
+  data:[
+    {
+      name: string;
+      image: string;
+      category: string;
+    },
+      ]
 }
 
 export interface project {
