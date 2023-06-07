@@ -158,6 +158,7 @@
 			"company": "ABC Tech Solutions",
 			"position": "Web Developer",
 			"duration": "2020 - 2021",
+			"isLeft": true,
 			"desc": [
 				"Assisted with design and development of project.",
 				"Worked on building the product from scratch and built multiple dashboards.",
@@ -168,6 +169,7 @@
 			"company": "ABC Tech Solutions",
 			"position": "Web Developer",
 			"duration": "2020 - 2021",
+			"isLeft": false,
 			"desc": [
 				"Assisted with design and development of project.",
 				"Worked on building the product from scratch and built multiple dashboards.",
@@ -178,6 +180,7 @@
 			"company": "XYZ Tech Solutions",
 			"position": "Web Developer",
 			"duration": "2022 - 2023",
+			"isLeft": true,
 			"desc": [
 				"Assisted with design and development of project.",
 				"Worked on building the product from scratch and built multiple dashboards.",

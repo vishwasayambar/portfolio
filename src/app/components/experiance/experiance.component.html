@@ -1,1 +1,151 @@
-<p>experiance works!</p>
+<div class="container-fluid mb-5">
+	<div class="container-fluid d-flex flex-column justify-content-center my-5 flex-wrap">
+		<h2 class="text-center">Tech Stack</h2>
+		<div class="d-flex justify-content-center">
+			<div class="example-button-row">
+				<button mat-button color="primary" (click)="onChange('Experience')">
+					<mat-icon>favorite</mat-icon>
+					Experience
+				</button>
+				<button mat-button color="accent" (click)="onChange('Education')">
+					<mat-icon>favorite</mat-icon>
+					Education
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+<section *ngIf="category === 'Experience'" >
+<div class="container" *ngFor="let item of defaultCards; index as i">
+	<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
+		<div class="left-card">
+			<h3>{{item.company}}</h3>
+			<ul>
+				<h5>{{item.position}} | {{item.duration}} </h5>
+				<li>
+					{{item.desc[0]}}
+				</li>
+				<li>
+					{{item.desc[1]}}
+				</li>
+				<li>
+					{{item.desc[2]}}
+				</li>
+			</ul>
+		</div>
+		<div class="center-steep">
+			<div class="vertical-line"></div>
+			<div class="fs-4 vertical-line-icon">
+				<img src="assets/images/user.png" width="40" height="40">
+			</div>
+		</div>
+		<div class="right-card">
+
+		</div>
+	</div>
+	<div class="cards d-flex justify-content-evenly" *ngIf="!item.isLeft">
+		<div class="left-card">
+
+		</div>
+		<div class="center-steep">
+			<div class="vertical-line"></div>
+			<div class="fs-4 vertical-line-icon">
+				<img src="assets/images/user.png" width="40" height="40">
+			</div>
+		</div>
+		<div class="right-card">
+			<h3>{{item.company}}</h3>
+			<ul>
+				<h5>{{item.position}} | {{item.duration}} </h5>
+				<li>
+					{{item.desc[0]}}
+				</li>
+				<li>
+					{{item.desc[1]}}
+				</li>
+				<li>
+					{{item.desc[2]}}
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
+		<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+	</div>
+</div>
+	<div class="d-flex justify-content-center" *ngIf="isView">
+		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
+	</div>
+
+<div class="container">
+
+</div>
+</section>
+
+<section *ngIf="category === 'Education'">
+	<div class="container">
+		<div class="cards d-flex justify-content-evenly">
+			<div class="left-card">
+				<h3>Public School Walunj</h3>
+				<ul>
+					<h5>Full Stack Developer - Intern | Jan 2023 - Present</h5>
+					<li>
+						Contributed to AngularJS framework-based project design and development.
+					</li>
+					<li>
+						Assist in areas such as backend development and project management.
+
+					</li>
+					<li>
+						Skills: HTML · CSS · JavaScript · NodeJS · MySQL · REST APIs · SpringBoot · Angular · AngularJS ·
+						Git · GitHub · GitLab · Slack · Postman · Figma
+					</li>
+				</ul>
+			</div>
+			<div class="center-steep">
+				<div class="vertical-line"></div>
+				<div class="fs-4 vertical-line-icon">
+					<img src="assets/images/degree.png" width="40" height="40">
+				</div>
+			</div>
+			<div class="right-card">
+
+			</div>
+		</div>
+	</div><div class="container">
+	<div class="cards d-flex justify-content-evenly">
+		<div class="left-card">
+
+		</div>
+		<div class="center-steep">
+			<div class="vertical-line"></div>
+			<div class="fs-4 vertical-line-icon">
+				<img src="assets/images/degree.png" width="40" height="40">
+			</div>
+		</div>
+		<div class="right-card">
+			<h3>Thinking Stack</h3>
+			<ul>
+				<h5>Full Stack Developer - Intern | Jan 2023 - Present</h5>
+				<li>
+					Contributed to AngularJS framework-based project design and development.
+				</li>
+				<li>
+					Assist in areas such as backend development and project management.
+
+				</li>
+				<li>
+					Skills: HTML · CSS · JavaScript · NodeJS · MySQL · REST APIs · SpringBoot · Angular · AngularJS ·
+					Git · GitHub · GitLab · Slack · Postman · Figma
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+	<div class="d-flex justify-content-center" *ngIf="!isView">
+		<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+	</div>
+	<div class="d-flex justify-content-center" *ngIf="isView">
+		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
+	</div>
+</section>

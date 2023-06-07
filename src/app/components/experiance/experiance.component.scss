@@ -1,0 +1,72 @@
+//* {
+//	box-sizing: border-box;
+//	margin: 0;
+//	padding: 0;
+//	}
+//
+//body {
+//	font-family: Arial, sans-serif;
+//	}
+
+//.container {
+//	display: flex;
+//	justify-content: center;
+//	align-items: center;
+//	height: 100vh;
+//	}
+
+.cards {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	//width: 800px;
+	//background-color: #f2f2f2;
+	//padding: 20px;
+	//border-radius: 8px;
+	}
+
+.left-card,
+.right-card {
+	//width: 200px;
+	height: 200px;
+	//background-color: #e6e6e6;
+	border-radius: 8px;
+	width: 50%;
+	margin: 20px;
+	}
+
+.center-steep {
+	//flex-grow: 1;
+	height: 300px;
+	background-color: #ffffff;
+	//transform: skewY(-10deg);
+	z-index: 1;
+	position: relative;
+	}
+
+.vertical-line {
+	position: absolute;
+	width: 2px;
+	height: 100%;
+	background-color: #000000;
+	//background-image: url('/assets/images/lin.png');
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	z-index: 2;
+	}
+
+.vertical-line-icon{
+	position: absolute;
+	top: 44%;
+	right: -31px;
+	opacity: 1000;
+	z-index: 1000;
+	background: #dca2f7;
+	height: 60px;
+	width: 60px;
+	display: flex;
+	border-radius: 50%;
+	align-items: center;
+	justify-content: center;
+	}
