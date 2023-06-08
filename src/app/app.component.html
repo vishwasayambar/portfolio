@@ -1,40 +1,44 @@
 <div class="section">
-<nav class="navbar navbar-expand-lg sticky-top  ">
-	<div class="container-fluid justify-content-around">
-		<a class="navbar-brand fs-3 " href="#" >< Vishwajit Sayambar /></a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
-			<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-				<li class="nav-item p-2">
-					<a class="nav-link active" aria-current="page" href="#">Home</a>
-				</li>
-				<li class="nav-item p-2">
-					<a class="nav-link" href="#about">About</a>
-				</li>
-				<li class="nav-item p-2">
-					<a class="nav-link" href="#skill">Skills</a>
-				</li>
-				<li class="nav-item p-2">
-					<a class="nav-link" href="#project">Projects</a>
-				</li>
-				<li class="nav-item p-2">
-					<a class="nav-link" href="#experience">Experience</a>
-				</li>
-				<li class="nav-item p-2">
-					<a class="nav-link" href="#contact">Contact</a>
-				</li>
-			</ul>
+	<nav class="navbar navbar-expand-lg sticky-top  ">
+		<div class="container-fluid justify-content-around">
+			<a class="navbar-brand fs-3 " href="#">< Vishwajit Sayambar /></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+					<li class="nav-item p-2">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#skill">Skills</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#project">Projects</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#experience">Experience</a>
+					</li>
+					<li class="nav-item p-2">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
 		</div>
+	</nav>
+	<app-main></app-main>
+	<div class="About-heading text-center mt-5">
+		<h1>About Me</h1>
 	</div>
-</nav>
-<app-main></app-main>
-<div class="About-heading text-center mt-5">
-	<h1>About Me</h1>
-</div>
-<app-about id="about"></app-about>
-<app-skills [skills]="data?.skills" id="skill"></app-skills>
-<app-projects [projects]="data?.projects"></app-projects>
+	<app-about id="about"></app-about>
+	<app-skills [skills]="data?.skills" id="skill"></app-skills>
+	<app-projects [projects]="data?.projects"></app-projects>
 	<app-experiance [experiences]="data?.experiences" [educations]="data?.educations"></app-experiance>
+	<app-contact></app-contact>
+	<app-footer></app-footer>
 </div>
