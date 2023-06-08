@@ -15,6 +15,43 @@
 		</div>
 	</div>
 </div>
+<ng-template [ngIf]="isMobileDevice" [ngIfElse]="isNotMobileDevice">
+	<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
+		<div class="cards d-flex justify-content-evenly">
+<!--			<div class="left-card">-->
+
+<!--			</div>-->
+			<div class="center-steep">
+				<div class="vertical-line"></div>
+				<div class="fs-4 vertical-line-icon">
+					<img src="assets/images/user.png" width="40" height="40">
+				</div>
+			</div>
+			<div class="right-card">
+				<h3>{{item.company}}</h3>
+				<ul>
+					<h5>{{item.position}} | {{item.duration}} </h5>
+					<li>
+						{{item.desc[0]}}
+					</li>
+					<li>
+						{{item.desc[1]}}
+					</li>
+					<li>
+						{{item.desc[2]}}
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
+			<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+		</div>
+	</div>
+	<div class="d-flex justify-content-center" *ngIf="isView">
+		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
+	</div>
+</ng-template>
+<ng-template #isNotMobileDevice>
 <section *ngIf="category === 'Experience'">
 	<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
 		<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
@@ -140,3 +177,4 @@
 		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
 	</div>
 </section>
+</ng-template>

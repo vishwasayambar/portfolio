@@ -70,3 +70,13 @@
 	align-items: center;
 	justify-content: center;
 	}
+
+@media screen and (max-width: 768px){
+	.right-card {
+		//width: 200px;
+		height: 200px;
+		//background-color: #e6e6e6;
+		border-radius: 8px;
+		width: 70%;
+		}
+	}

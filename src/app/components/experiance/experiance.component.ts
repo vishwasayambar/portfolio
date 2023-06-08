@@ -9,15 +9,14 @@ export class ExperianceComponent implements OnInit {
 
 	@Input() experiences;
 	@Input() educations;
-
-	constructor() {
-	}
-
+	isMobileDevice = window.innerWidth < 720;
 	isView = false;
 	category = "Experience";
 	defaultExperienceCards = [];
 	defaultEducationCards = [];
 
+	constructor() {
+	}
 
 	ngOnInit(): void {
 		this.defaultExperienceCards = this.experiences.slice(0, 2);
