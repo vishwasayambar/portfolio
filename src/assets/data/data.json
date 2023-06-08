@@ -134,18 +134,28 @@
 			"institute": "XYZ School | CBSE",
 			"degree": "HSC Science",
 			"duration": "2014 - 2016",
-			"desc": []
+			"isLeft": true,
+			"desc": [
+				"Studied basic computer science and programming concepts",
+				"Learned about the fundamentals of computer science, including data structures, algorithms, and programming languages."
+			]
 		},
 		{
 			"institute": "XYZ School | CBSE",
 			"degree": "HSC Science",
 			"duration": "2014 - 2016",
-			"desc": []
+			"isLeft": false,
+			"desc": [
+				"Took up computer science as a major subject in 12th standard",
+				"Studied advanced computer science and programming concepts",
+				"Learned about the fundamentals of computer science, including data structures, algorithms, and programming languages."
+			]
 		},
 		{
 			"institute": "XYZ College Of Engineering",
 			"degree": "B.Tech CSE",
 			"duration": "2016 - 2020",
+			"isLeft": true,
 			"desc": [
 				"Pursuing IT Engineering course from ABC University",
 				"Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
