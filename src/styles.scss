@@ -44,7 +44,7 @@ $theme-btn-hover-color :rgb(186 46 212 / 93%);
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
+body { margin: 0; font-family: Roboto, 'Helvetica Neue', sans-serif;
   
   background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
   
@@ -59,4 +59,28 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;
 
 .theme-color{
   color: #8c1dd2ed;
+  }
+
+.btn-theme{
+  color: white;
+  background: #8c1dd2ed;
+  & a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px !important;
+    }
+  &:hover{
+    background: $theme-btn-hover-color
+    }
+  }
+
+.header-height{
+  height: 5em;
+  }
+.btn-bg-primary {
+  color: #8c1dd2ed;
+  }
+.active-btn-bg-primary{
+  background-color: #8c1dd2ed;
+  color: #fff;
   }

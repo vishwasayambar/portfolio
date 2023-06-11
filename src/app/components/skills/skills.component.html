@@ -1,18 +1,19 @@
-<div class="section">
+<div class="header-height"></div>
+<div class="section mt-5">
 	<div class="container-fluid mb-5">
 		<div class="container-fluid d-flex flex-column justify-content-center my-5 flex-wrap">
-			<h2 class="text-center">Tech Stack</h2>
+			<h2 class="text-center fs-2">Tech Stack</h2>
 			<div class="d-flex justify-content-center">
 				<div class="example-button-row">
-					<button mat-button color="primary" (click)="onSkillChange('Frontend')">
+					<button mat-button class="mx-2" [ngClass]="category === 'Frontend' ? 'active-btn-bg-primary' : 'btn-bg-primary'"  (click)="onSkillChange('Frontend')">
 						<mat-icon>favorite</mat-icon>
 						Frontend
 					</button>
-					<button mat-button color="accent" (click)="onSkillChange('Backend')">
+					<button mat-button class="mx-2" [ngClass]="category === 'Backend' ? 'active-btn-bg-primary' : 'btn-bg-primary'"  (click)="onSkillChange('Backend')">
 						<mat-icon>favorite</mat-icon>
 						Backend
 					</button>
-					<button mat-button color="warn" (click)="onSkillChange('Tools')">
+					<button mat-button class="mx-2" [ngClass]="category === 'Tools' ? 'active-btn-bg-primary' : 'btn-bg-primary'" (click)="onSkillChange('Tools')">
 						<mat-icon>favorite</mat-icon>
 						Tools
 					</button>
