@@ -7,7 +7,7 @@ import {NgForm} from "@angular/forms";
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-  isMobileDevice = window.innerWidth < 720;
+  isMobileDevice = window.innerWidth < 920;
 
   constructor() { }
 

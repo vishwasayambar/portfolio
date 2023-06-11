@@ -9,7 +9,7 @@ export class ExperianceComponent implements OnInit {
 
 	@Input() experiences;
 	@Input() educations;
-	isMobileDevice = window.innerWidth < 720;
+	isMobileDevice = window.innerWidth < 920;
 	isView = false;
 	category = "Experience";
 	defaultExperienceCards = [];

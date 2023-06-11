@@ -7,7 +7,7 @@ import { Component, Input, OnInit } from "@angular/core";
 })
 export class ProjectsComponent implements OnInit {
   @Input() projects;
-  isMobileDevice = window.innerWidth < 720;
+  isMobileDevice = window.innerWidth < 920;
   category: string = "WebProjects";
   webProjects:[{name:string,image:string,category:string}];
   angular:[{name:string,image:string,category:string}];

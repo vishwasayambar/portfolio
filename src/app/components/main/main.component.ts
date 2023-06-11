@@ -6,7 +6,7 @@ import { Component, OnInit } from "@angular/core";
 	styleUrls: ["./main.component.scss"]
 })
 export class MainComponent implements OnInit {
-	isMobileDevice = window.innerWidth < 720;
+	isMobileDevice = window.innerWidth < 920;
 	developerNames = ["Frontend Developer", "Backend Developer", "Fullstack Developer",];
 	currentTextIndex = 0; // Current Text Index of the Array
 	displayText = ''; // Text to display
