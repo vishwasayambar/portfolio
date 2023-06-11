@@ -1,0 +1,19 @@
+.links {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+	}
+
+.links .links-btn {
+	display: flex;
+	height: 40px;
+	width: 40px;
+	align-items: center;
+	background: #e9e2e7;
+	justify-content: center;
+	border-radius:50%
+	}
+
+.links .links-btn a {
+	color: #8c1dd2ed;
+	}
