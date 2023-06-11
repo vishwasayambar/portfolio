@@ -47,7 +47,32 @@
 	],
 	"skills": [
 		{
+			"name": "Angular",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
+			"name": "HTML5",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
+			"name": "CSS3",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
 			"name": "JavaScript",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
+			"name": "TypeScript",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
+			"name": "Bootstrap",
 			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
 			"category": "Frontend"
 		},
@@ -57,7 +82,27 @@
 			"category": "Frontend"
 		},
 		{
+			"name": "DevExtreme",
+			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"category": "Frontend"
+		},
+		{
+			"name": "Laravel",
+			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"category": "Backend"
+		},
+		{
+			"name": "Docker",
+			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"category": "Backend"
+		},
+		{
 			"name": "Firebase",
+			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"category": "Backend"
+		},
+		{
+			"name": "MySQL",
 			"image": "https://img.icons8.com/color/144/null/firebase.png",
 			"category": "Backend"
 		},
@@ -67,7 +112,27 @@
 			"category": "Tools"
 		},
 		{
-			"name": "GitHub",
+			"name": "Git",
+			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"category": "Tools"
+		},
+		{
+			"name": "Slack",
+			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"category": "Tools"
+		},
+		{
+			"name": "Ray",
+			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"category": "Tools"
+		},
+		{
+			"name": "TinkerWell",
+			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"category": "Tools"
+		},
+		{
+			"name": "Googling",
 			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
 			"category": "Tools"
 		}
@@ -191,6 +256,16 @@
 			"position": "Web Developer",
 			"duration": "2022 - 2023",
 			"isLeft": true,
+			"desc": [
+				"Assisted with design and development of project.",
+				"Worked on building the product from scratch and built multiple dashboards.",
+				"Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+			]
+		},{
+			"company": "Vishwa Tech Solutions",
+			"position": "Web Developer",
+			"duration": "2022 - 2023",
+			"isLeft": false,
 			"desc": [
 				"Assisted with design and development of project.",
 				"Worked on building the product from scratch and built multiple dashboards.",
