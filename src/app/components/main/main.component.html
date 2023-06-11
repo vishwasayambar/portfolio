@@ -2,15 +2,16 @@
 	<div class="content d-flex align-items-center justify-content-center "
 		 [ngClass]="isMobileDevice ? 'mt-5 text-center' : ''">
 		<div class="w-75">
-			<div class="fs-4">
-				<span> <img src="assets/images/waving-hand.gif" width="40" height="40"> Hey</span>
+			<div class="fs-4 d-flex align-items-center" [ngClass]="isMobileDevice ? 'justify-content-center' : ''">
+				<span> <img src="assets/images/waving-hand.gif" width="35" height="35"></span><span
+					class="py-1">Hey</span>
 			</div>
 			<h1 class="fs-1 fw-bolder py-3 m-0">I'm Vishwajit Sayambar</h1>
 			<h3 class="fs-4 m-0 pb-3">I am a <span class="theme-color">{{displayText}}</span></h3>
-			<p>My focus is on creating web applications that meet client needs with attention to detail,
-				scalability, and performance to ensure a user-friendly experience.</p>
+			<p class="text">Full Stack Web Developer with 1+ years of experience
+				building scalable, optimized, and secure web applications using Laravel, and Angular.</p>
 			<div>
-				<button class="btn btn-primary btn-sm ">About Me</button>
+				<button class="btn btn-theme btn-sm"><a href="#about">About Me</a></button>
 			</div>
 		</div>
 	</div>
