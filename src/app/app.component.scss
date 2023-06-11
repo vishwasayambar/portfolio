@@ -13,3 +13,40 @@
 .section{
 	background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
 	}
+
+.floating-btn {
+	position: fixed;
+	left: 30px; /* Adjust the value as per your preference */
+	top: 60%; /* Adjust the value as per your preference */
+	transform: translateY(-30%);
+	}
+
+.floating-btn a {
+	display: flex;
+	width: 40px; /* Adjust the value as per your preference */
+	height: 40px; /* Adjust the value as per your preference */
+	background-color: #e9e2e7; /* Adjust the background color as per your preference */
+	line-height: 40px; /* Adjust the line height as per your preference */
+	margin-bottom: 10px; /* Adjust the value as per your preference */
+	cursor: pointer;
+	border-radius: 50%;
+	align-items: center;
+	justify-content:center;
+	text-decoration: none;
+	}
+
+.floating-btn a:hover{
+	transform: scale(1.2, 1.2);
+	background-color: #ffe6fb;
+	
+	& i{
+		color: rgb(186 46 212 / 93%);
+		}
+	}
+
+
+/* Adjust the icon styles as per your preference */
+.floating-btn i {
+	color: #8c1dd2ed;
+	font-size: 20px;
+	}
