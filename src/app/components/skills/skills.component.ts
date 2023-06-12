@@ -15,8 +15,6 @@ export class SkillsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.skills);
-    console.log(typeof this.skills);
     const categorizedData = this.skills.reduce((acc, item) => {
       if (!acc[item.category]) {
         acc[item.category] = [];
@@ -27,10 +25,6 @@ export class SkillsComponent implements OnInit {
     this.frontendSkills = categorizedData['Frontend']
     this.backendSkills = categorizedData['Backend']
     this.toolsSkills = categorizedData['Tools']
-    console.log(this.newSkills);
-    console.log(this.frontendSkills,"FrontEnd Skill");
-    console.log(this.backendSkills,"Backend Skill");
-    console.log(this.toolsSkills,"Tools Skill");
   }
   onSkillChange(skill){
     if(skill === "Frontend"){

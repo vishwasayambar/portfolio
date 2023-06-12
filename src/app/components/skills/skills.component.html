@@ -5,15 +5,21 @@
 			<h2 class="text-center fs-2">Tech Stack</h2>
 			<div class="d-flex justify-content-center">
 				<div class="example-button-row">
-					<button mat-button class="mx-2" [ngClass]="category === 'Frontend' ? 'active-btn-bg-primary' : 'btn-bg-primary'"  (click)="onSkillChange('Frontend')">
+					<button mat-button class="btn-bg-primary"
+							[ngClass]="{'active-btn-bg-primary' : category === 'Frontend' ,'mx-2': !isMobileDevice}"
+							(click)="onSkillChange('Frontend'); isMobileDevice ? '' : 'mx-2'">
 						<mat-icon>favorite</mat-icon>
 						Frontend
 					</button>
-					<button mat-button class="mx-2" [ngClass]="category === 'Backend' ? 'active-btn-bg-primary' : 'btn-bg-primary'"  (click)="onSkillChange('Backend')">
+					<button mat-button class="btn-bg-primary"
+							[ngClass]="{'active-btn-bg-primary' : category === 'Backend' ,'mx-2': !isMobileDevice}"
+							(click)="onSkillChange('Backend')">
 						<mat-icon>favorite</mat-icon>
 						Backend
 					</button>
-					<button mat-button class="mx-2" [ngClass]="category === 'Tools' ? 'active-btn-bg-primary' : 'btn-bg-primary'" (click)="onSkillChange('Tools')">
+					<button mat-button class="btn-bg-primary"
+							[ngClass]="{'active-btn-bg-primary' : category === 'Tools' ,'mx-2': !isMobileDevice}"
+							(click)="onSkillChange('Tools')">
 						<mat-icon>favorite</mat-icon>
 						Tools
 					</button>
@@ -28,7 +34,7 @@
 					<button mat-fab color="light" aria-label="Example icon button with a delete icon">
 						<img [src]="skill.image" width="50" height="50" class="">
 					</button>
-					<h6 class="text-center">{{skill?.name}}</h6>
+					<h4 class="text-center pt-2">{{skill?.name}}</h4>
 				</div>
 			</div>
 			<div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3" *ngSwitchCase="'Backend'">
@@ -36,7 +42,7 @@
 					<button mat-fab color="light" aria-label="Example icon button with a delete icon">
 						<img [src]="skill.image" width="50" height="50" class="">
 					</button>
-					<h6 class="text-center">{{skill?.name}}</h6>
+					<h4 class="text-center pt-2">{{skill?.name}}</h4>
 				</div>
 			</div>
 			<div class="row row-cols-3 row-cols-lg-5 g-2 g-lg-3" *ngSwitchCase="'Tools'">
@@ -45,7 +51,7 @@
 						<img [src]="skill.image" width="50" height="50" class="">
 
 					</button>
-					<h6 class="text-center">{{skill?.name}}</h6>
+					<h4 class="text-center pt-2">{{skill?.name}}</h4>
 				</div>
 			</div>
 		</div>
