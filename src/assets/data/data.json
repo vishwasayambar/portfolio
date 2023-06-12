@@ -48,17 +48,17 @@
 	"skills": [
 		{
 			"name": "Angular",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/angularjs.png",
 			"category": "Frontend"
 		},
 		{
 			"name": "HTML5",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/html-5--v1.png",
 			"category": "Frontend"
 		},
 		{
 			"name": "CSS3",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/css3.png",
 			"category": "Frontend"
 		},
 		{
@@ -68,32 +68,32 @@
 		},
 		{
 			"name": "TypeScript",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/typescript.png",
 			"category": "Frontend"
 		},
 		{
 			"name": "Bootstrap",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/bootstrap.png",
 			"category": "Frontend"
 		},
 		{
 			"name": "node",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "https://img.icons8.com/color/144/null/nodejs.png",
 			"category": "Frontend"
 		},
 		{
 			"name": "DevExtreme",
-			"image": "https://img.icons8.com/color/144/null/javascript--v1.png",
+			"image": "/assets/techimages/devextreme.jpeg",
 			"category": "Frontend"
 		},
 		{
 			"name": "Laravel",
-			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"image": "/assets/techimages/laravel.png",
 			"category": "Backend"
 		},
 		{
 			"name": "Docker",
-			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"image": "https://img.icons8.com/color/144/null/docker.png",
 			"category": "Backend"
 		},
 		{
@@ -103,7 +103,7 @@
 		},
 		{
 			"name": "MySQL",
-			"image": "https://img.icons8.com/color/144/null/firebase.png",
+			"image": "/assets/techimages/mysql.png",
 			"category": "Backend"
 		},
 		{
@@ -113,27 +113,27 @@
 		},
 		{
 			"name": "Git",
-			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"image": "https://img.icons8.com/color/144/null/git.png",
 			"category": "Tools"
 		},
 		{
 			"name": "Slack",
-			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"image": "https://img.icons8.com/color/144/null/slack-new.png",
 			"category": "Tools"
 		},
 		{
 			"name": "Ray",
-			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"image": "/assets/techimages/ray.png",
 			"category": "Tools"
 		},
 		{
 			"name": "TinkerWell",
-			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"image": "https://tinkerwell.app/images/tinkerwell_logo.png",
 			"category": "Tools"
 		},
 		{
 			"name": "Googling",
-			"image": "https://img.icons8.com/material-outlined/96/null/github.png",
+			"image": "https://img.icons8.com/color/144/null/google-logo.png",
 			"category": "Tools"
 		}
 	],
