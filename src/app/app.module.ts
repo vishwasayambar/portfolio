@@ -10,10 +10,13 @@ import { ExperianceComponent } from "./components/experiance/experiance.componen
 import { ContactComponent } from "./components/contact/contact.component";
 import { FooterComponent } from "./components/footer/footer.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ResumeComponent } from "./components/resume/resume.component";
 import { AngularMaterialModule } from "./module/angular-material/angular-material.module";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { SocialComponent } from "./components/social/social.component";
 import { ProjectsComponent } from "./components/projects/projects.component";
+import { HomeComponent } from './components/home/home.component';
+
 
 @NgModule({
 	declarations: [
@@ -26,7 +29,9 @@ import { ProjectsComponent } from "./components/projects/projects.component";
 		SkillsComponent,
 		SocialComponent,
 		ProjectsComponent,
-		ContactComponent
+		ContactComponent,
+  		ResumeComponent,
+    	HomeComponent
 	],
 	imports: [
 		BrowserModule,

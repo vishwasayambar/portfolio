@@ -1,7 +1,7 @@
 <div class="section">
 	<nav class="navbar navbar-expand-lg sticky-top  ">
 		<div class="container-fluid" [ngClass]="isMobileDevice ? 'justify-content-between px-5': 'justify-content-around'">
-			<a class="navbar-brand fs-3 " href="#">< Vishwajit Sayambar /></a>
+			<a class="navbar-brand fs-3 " href="/">< Vishwajit Sayambar /></a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 					aria-expanded="false" aria-label="Toggle navigation">
@@ -10,10 +10,10 @@
 			<div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
 				<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
 					<li class="nav-item p-2">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link" href="#about">About</a>
 					</li>
 					<li class="nav-item p-2">
-						<a class="nav-link" href="#about">About</a>
+						<a class="nav-link" href="/resume">Resume</a>
 					</li>
 					<li class="nav-item p-2">
 						<a class="nav-link" href="#skill">Skills</a>
@@ -31,12 +31,7 @@
 			</div>
 		</div>
 	</nav>
-	<app-main></app-main>
-	<app-about id="about"></app-about>
-	<app-skills [skills]="data?.skills" id="skill"></app-skills>
-	<app-projects [projects]="data?.projects" id="project"></app-projects>
-	<app-experiance [experiences]="data?.experiences" [educations]="data?.educations" id="experience"></app-experiance>
-	<app-contact id="contact"></app-contact>
+	<router-outlet></router-outlet>
 	<app-footer></app-footer>
 </div>
 <div class="floating-btn" *ngIf="!isMobileDevice">
