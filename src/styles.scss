@@ -20,21 +20,18 @@ $portfolio-warn: mat.define-palette(mat.$red-palette);
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
 $portfolio-theme: mat.define-light-theme((
-  color: (
-    primary: $portfolio-primary,
-    accent: $portfolio-accent,
-    warn: $portfolio-warn,
-  )
+		color: (
+				primary: $portfolio-primary,
+				accent: $portfolio-accent,
+				warn: $portfolio-warn,
+		)
 ));
 
-
-
-$theme-color :#8c1dd2ed;
-$theme-btn-color :#8c1dd2ed;
-$theme-bg-color :#e9e2e7;
-$theme-bg-hover-color :#ffe6fb;
-$theme-btn-hover-color :rgb(186 46 212 / 93%);
-
+$theme-color: #8c1dd2ed;
+$theme-btn-color: #8c1dd2ed;
+$theme-bg-color: #e9e2e7;
+$theme-bg-hover-color: #ffe6fb;
+$theme-btn-hover-color: rgb(186 46 212 / 93%);
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -43,44 +40,79 @@ $theme-btn-hover-color :rgb(186 46 212 / 93%);
 
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, 'Helvetica Neue', sans-serif;
-  
-  background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
-  
-  }
+html, body {
+	height: 100%;
+	}
 
+body {
+	margin: 0;
+	font-family: Roboto, 'Helvetica Neue', sans-serif;
+	
+	background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
+	
+	}
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  }
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	}
 
-.theme-color{
-  color: #8c1dd2ed;
-  }
+.theme-color {
+	color: #8c1dd2ed;
+	}
 
-.btn-theme{
-  color: white;
-  background: #8c1dd2ed;
-  & a{
-    color: white;
-    text-decoration: none;
-    font-size: 15px !important;
-    }
-  &:hover{
-    background: $theme-btn-hover-color
-    }
-  }
+.btn-theme {
+	color: white;
+	background: #8c1dd2ed;
+	
+	& a {
+		color: white;
+		text-decoration: none;
+		font-size: 15px !important;
+		}
+	
+	&:hover {
+		background: $theme-btn-hover-color
+		}
+	}
 
-.header-height{
-  height: 5em;
-  }
+.btn-outline-theme {
+	color: #8c1dd2ed;
+	border: 1px solid #8c1dd2ed;
+	
+	& a {
+		color: #8c1dd2ed;
+		text-decoration: none;
+		font-size: 15px !important;
+		}
+	
+	&:hover {
+		background: $theme-btn-hover-color;
+		color: white;
+      a{
+        color: white;
+        }
+		}
+	}
+
+.header-height {
+	height: 5em;
+	}
+
 .btn-bg-primary {
-  color: #8c1dd2ed;
-  }
-.active-btn-bg-primary{
-  background-color: #8c1dd2ed;
-  color: #fff;
-  }
+	color: #8c1dd2ed;
+	}
+
+.active-btn-bg-primary {
+	background-color: #8c1dd2ed;
+	color: #ffffff;
+	}
+
+.text-theme {
+	color: #8c1dd2ed;
+	}
+
+.progress-bar {
+	background-color: #b20dfd69;
+	}
