@@ -19,19 +19,16 @@
 <ng-template [ngIf]="isMobileDevice" [ngIfElse]="isNotMobileDevice">
 	<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
 		<div class="cards d-flex justify-content-evenly">
-<!--			<div class="left-card">-->
-
-<!--			</div>-->
 			<div class="center-steep">
 				<div class="vertical-line"></div>
 				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="40" height="40">
+					<img src="assets/images/user.png" width="30" height="30">
 				</div>
 			</div>
 			<div class="right-card">
-				<h3>{{item.company}}</h3>
-				<ul>
-					<h5>{{item.position}} | {{item.duration}} </h5>
+				<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
+				<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
+				<ul class="text-muted">
 					<li>
 						{{item.desc[0]}}
 					</li>
@@ -57,9 +54,9 @@
 	<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
 		<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
 			<div class="left-card">
-				<h3>{{item.company}}</h3>
-				<ul>
-					<h5>{{item.position}} | {{item.duration}} </h5>
+				<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
+				<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
+				<ul class="text-muted">
 					<li>
 						{{item.desc[0]}}
 					</li>
@@ -69,12 +66,15 @@
 					<li>
 						{{item.desc[2]}}
 					</li>
+					<li>
+						{{item.desc[3]}}
+					</li>
 				</ul>
 			</div>
 			<div class="center-steep">
 				<div class="vertical-line"></div>
 				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="40" height="40">
+					<img src="assets/images/user.png" width="30" height="30">
 				</div>
 			</div>
 			<div class="right-card">
@@ -88,13 +88,13 @@
 			<div class="center-steep">
 				<div class="vertical-line"></div>
 				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="40" height="40">
+					<img src="assets/images/user.png" width="30" height="30">
 				</div>
 			</div>
 			<div class="right-card">
-				<h3>{{item.company}}</h3>
-				<ul>
-					<h5>{{item.position}} | {{item.duration}} </h5>
+				<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
+				<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
+				<ul class="text-muted">
 					<li>
 						{{item.desc[0]}}
 					</li>
@@ -103,6 +103,9 @@
 					</li>
 					<li>
 						{{item.desc[2]}}
+					</li>
+					<li>
+						{{item.desc[3]}}
 					</li>
 				</ul>
 			</div>
@@ -120,9 +123,9 @@
 	<div class="container" *ngFor="let item of defaultEducationCards; index as i">
 		<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
 			<div class="left-card">
-				<h3>{{item.institute}}</h3>
-				<ul>
-					<h5>{{item.degree}} | {{item.duration}} </h5>
+				<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
+				<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
+				<ul class="text-muted">
 					<li>
 						{{item.desc[0]}}
 					</li>
@@ -137,7 +140,7 @@
 			<div class="center-steep">
 				<div class="vertical-line"></div>
 				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="40" height="40">
+					<img src="assets/images/user.png" width="30" height="30">
 				</div>
 			</div>
 			<div class="right-card">
@@ -151,13 +154,13 @@
 			<div class="center-steep">
 				<div class="vertical-line"></div>
 				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="40" height="40">
+					<img src="assets/images/user.png" width="30" height="30">
 				</div>
 			</div>
 			<div class="right-card">
-				<h3>{{item.institute}}</h3>
-				<ul>
-					<h5>{{item.degree}} | {{item.duration}} </h5>
+				<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
+				<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
+				<ul class="text-muted">
 					<li>
 						{{item.desc[0]}}
 					</li>
