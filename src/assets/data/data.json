@@ -196,80 +196,75 @@
 	],
 	"educations": [
 		{
-			"institute": "XYZ School | CBSE",
-			"degree": "HSC Science",
-			"duration": "2014 - 2016",
+			"institute": "Savitribai Phule Pune University",
+			"degree": "BE | Information Technology",
+			"duration": "2018 - 2022",
 			"isLeft": true,
 			"desc": [
 				"Studied basic computer science and programming concepts",
+				"Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
+				"Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies.",
 				"Learned about the fundamentals of computer science, including data structures, algorithms, and programming languages."
 			]
 		},
 		{
-			"institute": "XYZ School | CBSE",
+			"institute": "Janata Junior College Ahmednagar",
 			"degree": "HSC Science",
-			"duration": "2014 - 2016",
+			"duration": "2017 - 2018",
 			"isLeft": false,
 			"desc": [
 				"Took up computer science as a major subject in 12th standard",
 				"Studied advanced computer science and programming concepts",
-				"Learned about the fundamentals of computer science, including data structures, algorithms, and programming languages."
+				"Studied advanced Concepts of Maths,Physics,Biology, and Chemistry"
 			]
 		},
 		{
-			"institute": "XYZ College Of Engineering",
-			"degree": "B.Tech CSE",
-			"duration": "2016 - 2020",
+			"institute": "Public School Walunj",
+			"degree": "SSC",
+			"duration": "2015 - 2016",
 			"isLeft": true,
 			"desc": [
-				"Pursuing IT Engineering course from ABC University",
-				"Worked on web application development using HTML, CSS, and JavaScript, designing a database system using SQL",
-				"Familiar with software development methodologies and project management practices, including Agile and Waterfall methodologies."
+				"Mathematics: Studied multiplication, division, fractions, decimals, and basic geometry.",
+				"Science: Explored the solar system, states of matter, basic physics principles, and the life cycle of plants and animals.",
+				"Language Arts: Developed reading and writing skills, including analyzing texts, expanding vocabulary, learning grammar rules, and practicing sentence and paragraph construction."
 			]
 		}
 	],
 	"experiences": [
 		{
-			"company": "ABC Tech Solutions",
-			"position": "Web Developer",
-			"duration": "2020 - 2021",
+			"company": "BytePhase Technologies Pvt Ltd",
+			"position": "Junior Software Developer - Full time",
+			"duration": "Aug 2022 - Present",
 			"isLeft": true,
 			"desc": [
-				"Assisted with design and development of project.",
-				"Worked on building the product from scratch and built multiple dashboards.",
-				"Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+				"Currently employed as a Full Stack Developer at a company.",
+				"Responsibilities include building and consuming RESTful APIs, integrating payment gateways, and developing Progressive Web Applications (PWAs) using technologies like Laravel, MySQL, and JavaScript.",
+				"Collaborate with cross-functional teams and follow best practices to optimize the performance and security of web applications.",
+				"Ensure thorough documentation for projects, including technical specifications and user guides."
 			]
 		},
 		{
-			"company": "ABC Tech Solutions",
-			"position": "Web Developer",
-			"duration": "2020 - 2021",
+			"company": "Freelancer",
+			"position": "Software Developer",
+			"duration": "2021 - Present",
 			"isLeft": false,
 			"desc": [
-				"Assisted with design and development of project.",
-				"Worked on building the product from scratch and built multiple dashboards.",
-				"Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+				"Skilled in handling and building complex websites as a freelance Full Stack Web Developer.",
+				"Proficient in PHP, JavaScript, Angular, and Laravel.",
+				"Capable of designing and implementing robust solutions for complex website requirements.",
+				"Experienced in working with diverse technologies and frameworks to deliver sophisticated web applications."
 			]
 		},
 		{
-			"company": "XYZ Tech Solutions",
-			"position": "Web Developer",
-			"duration": "2022 - 2023",
+			"company": "BytePhase Technologies Pvt Ltd",
+			"position": "Frontend Developer - Intern",
+			"duration": "2021 - 2022",
 			"isLeft": true,
 			"desc": [
-				"Assisted with design and development of project.",
-				"Worked on building the product from scratch and built multiple dashboards.",
-				"Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
-			]
-		},{
-			"company": "Vishwa Tech Solutions",
-			"position": "Web Developer",
-			"duration": "2022 - 2023",
-			"isLeft": false,
-			"desc": [
-				"Assisted with design and development of project.",
-				"Worked on building the product from scratch and built multiple dashboards.",
-				"Skills: HTML · CSS · JavaScript · TailwindCSS · ReactJS · NodeJS · MySQL · REST APIs"
+				"Implement front-end designs and user interfaces using Angular,Bootstrap, HTML5, and CSS3 also with DevExtreme.",
+				"Build and consume RESTful APIs to interact with backend systems\nand databases.",
+				"Manage git and GitHub projects and tickets",
+				"Skills: HTML · CSS · JavaScript · Bootstrap · Angular · NodeJS · MySQL · REST APIs · DevExtreme"
 			]
 		}
 	]
