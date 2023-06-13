@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./resume.component.scss']
 })
 export class ResumeComponent implements OnInit {
+  isMobileDevice = window.innerWidth < 920;
 
   constructor() { }
 
