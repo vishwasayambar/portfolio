@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {NgForm} from "@angular/forms";
+import { ContactUsService } from "../../module/shared/contact-us.service";
 
 @Component({
   selector: 'app-contact',
@@ -9,12 +10,19 @@ import {NgForm} from "@angular/forms";
 export class ContactComponent implements OnInit {
   isMobileDevice = window.innerWidth < 920;
 
-  constructor() { }
+  constructor(protected service:ContactUsService) { }
 
   ngOnInit(): void {
   }
   save(data:NgForm){
-    console.log("Form Data",data);
+
+    this.service.formSubmit(data).subscribe(response => {
+      console.log(response);
+      alert('Form saved successfully');
+    }, err => {
+      console.log(err);
+    });
+    // console.log("Form Data",data)
   }
 
 }
