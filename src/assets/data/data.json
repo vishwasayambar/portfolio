@@ -150,10 +150,10 @@
 			}
 		},
 		{
-			"name": "Project FLUTTER",
-			"techstack": "Flutter, Dart, Firebase",
+			"name": "Portfolio",
+			"techstack": "Angular, Firebase",
 			"category": "Angular",
-			"image": "https://media.geeksforgeeks.org/wp-content/cdn-uploads/20210114225740/10-Best-Web-Development-Project-Ideas-For-Beginners-in-2021.png",
+			"image": "/assets/techimages/to-do-list-backend.webp",
 			"links": {
 				"code": "",
 				"video": "",
