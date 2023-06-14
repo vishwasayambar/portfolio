@@ -5,22 +5,34 @@
 			<h2 class="text-center fs-2">Work/Projects</h2>
 			<div class="d-flex justify-content-center">
 				<div class="example-button-row d-flex justify-content-center flex-wrap">
-					<button mat-button color="primary" class="px-3 bg-light m-1 rounded m-0"
+					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
+							[ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('WebProjects')">
+						<mat-icon>favorite</mat-icon>
 						Web Projects
 					</button>
-					<button mat-button color="accent" class="px-3 bg-light m-1 rounded m-0"
+					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
+							[ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('laravel')">
+						<mat-icon>favorite</mat-icon>
 						laravel
 					</button>
-					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0" (click)="onChange('Angular')">
+					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
+							[ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
+							(click)="onChange('Angular')">
+						<mat-icon>favorite</mat-icon>
 						Angular
 					</button>
-					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0" (click)="onChange('Blogs')">
+					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
+							[ngClass]="category === 'Blogs' ? 'active-btn-bg-primary' : ''"
+							(click)="onChange('Blogs')">
+						<mat-icon>favorite</mat-icon>
 						Blogs
 					</button>
-					<button mat-button color="warn" class="px-3 bg-light m-1 rounded m-0"
+					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
+							[ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('BasicWebApp')">
+						<mat-icon>favorite</mat-icon>
 						Basic Web App
 					</button>
 				</div>
