@@ -16,16 +16,16 @@
 			<form #contactForm="ngForm" (ngSubmit)="save(contactForm.value)">
 				<div class="mb-3">
 					<input type="text" class="form-control bg-light border-0" id="name" aria-describedby="nameHelp"
-						   placeholder="Full Name">
+						   placeholder="Full Name" ngModel name="name" >
 <!--					<div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>-->
 				</div>
 				<div class="mb-3">
 					<input type="email" class="form-control bg-light border-0" placeholder="Email"
-						   id="exampleInputEmail1" aria-describedby="emailHelp">
+						   id="exampleInputEmail1" ngModel name="email" aria-describedby="emailHelp">
 <!--					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
 				</div>
 				<div class="mb-3">
-					<textarea class="form-control bg-light border-0" placeholder="Leave a Message here" id="floatingTextarea2" style="height: 100px"></textarea>
+					<textarea class="form-control bg-light border-0" ngModel name="message" placeholder="Leave a Message here" id="floatingTextarea2" style="height: 100px"></textarea>
 				</div>
 				<button type="submit" class="btn btn-theme float-end">Say Hello
 					<span><img src="assets/images/waving-hand.gif" width="20" height="20"></span>
