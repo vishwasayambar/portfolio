@@ -116,3 +116,14 @@ body {
 .progress-bar {
 	background-color: #b20dfd69;
 	}
+
+.theme-badge{
+	padding: 5px 9px;
+	background-color: #f7e7ff38;
+	border: 1px solid #bc40fa38;
+	color: #a329ab;
+	border-radius: 3px;
+	&:hover{
+		background-color: #f1d8ff;
+		}
+	}
