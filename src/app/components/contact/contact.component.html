@@ -16,18 +16,29 @@
 			<form #contactForm="ngForm" (ngSubmit)="save(contactForm.value)">
 				<div class="mb-3">
 					<input type="text" class="form-control bg-light border-0" id="name" aria-describedby="nameHelp"
-						   placeholder="Full Name" ngModel name="name" >
-<!--					<div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+						   placeholder="Full Name" ngModel name="name" required>
+					<!--					<div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+					<div class="ms-3 text-danger"
+						 *ngIf="contactForm.controls.name?.invalid && contactForm.controls.name?.touched">
+						Name is required.
+					</div>
 				</div>
 				<div class="mb-3">
-					<input type="email" class="form-control bg-light border-0" placeholder="Email"
+					<input type="email" class="form-control bg-light border-0" placeholder="Email" required email
 						   id="exampleInputEmail1" ngModel name="email" aria-describedby="emailHelp">
-<!--					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+					<!--					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
+					<div class="ms-3 text-danger"
+						 *ngIf="contactForm.controls.email?.invalid && contactForm.controls.email?.touched">
+						Email is required and should be valid.
+					</div>
 				</div>
 				<div class="mb-3">
-					<textarea class="form-control bg-light border-0" ngModel name="message" placeholder="Leave a Message here" id="floatingTextarea2" style="height: 100px"></textarea>
+					<textarea class="form-control bg-light border-0" ngModel name="message"
+							  placeholder="Leave a Message here" id="floatingTextarea2"
+							  style="height: 100px"></textarea>
 				</div>
-				<button type="submit" class="btn btn-theme float-end">Say Hello
+				<button type="submit" class="btn btn-theme submit-btn float-end" [disabled]="!contactForm.valid">Say
+					Hello
 					<span><img src="assets/images/waving-hand.gif" width="20" height="20"></span>
 				</button>
 			</form>
