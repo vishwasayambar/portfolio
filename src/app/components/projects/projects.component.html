@@ -8,31 +8,31 @@
 					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
 							[ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('WebProjects')">
-						<mat-icon>favorite</mat-icon>
+						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Web Projects
 					</button>
 					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
 							[ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('laravel')">
-						<mat-icon>favorite</mat-icon>
+						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						laravel
 					</button>
 					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
 							[ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('Angular')">
-						<mat-icon>favorite</mat-icon>
+						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Angular
 					</button>
 					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
 							[ngClass]="category === 'Blogs' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('Blogs')">
-						<mat-icon>favorite</mat-icon>
+						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Blogs
 					</button>
 					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
 							[ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
 							(click)="onChange('BasicWebApp')">
-						<mat-icon>favorite</mat-icon>
+						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Basic Web App
 					</button>
 				</div>

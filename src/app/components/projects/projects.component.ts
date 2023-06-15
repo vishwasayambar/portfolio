@@ -15,7 +15,6 @@ export class ProjectsComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    console.log("projects", this.projects);
     const seperateProject = this.projects.reduce((acc, project) => {
       if(!acc[project.category]){
         acc[project.category] = [];
@@ -23,13 +22,9 @@ export class ProjectsComponent implements OnInit {
       acc[project.category].push(project);
       return acc;
     }, [])
-    console.log(seperateProject)
     this.webProjects = seperateProject['WebProjects'];
     this.angular = seperateProject['Angular'];
     this.blogs = seperateProject['Blogs'];
-    console.log(this.webProjects);
-    console.log(this.angular);
-    console.log(this.blogs);
   }
   onChange(fields){
     if(fields === "WebProjects"){
