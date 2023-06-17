@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: IM Fell Great Primer
+- Font Author: © 2007 Igino Marini (www.iginomarini.com) With Reserved Font Name IM FELL Great Primer Italic
+- Font Source: http://fonts.gstatic.com/s/imfellgreatprimer/v21/bx6aNwSJtayYxOkbYFsT6hMsLzX7u85rJorXvDo3SQY1.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
