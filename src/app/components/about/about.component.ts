@@ -1,15 +1,17 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-about',
-  templateUrl: './about.component.html',
-  styleUrls: ['./about.component.scss']
+	selector: "app-about",
+	templateUrl: "./about.component.html",
+	styleUrls: ["./about.component.scss"]
 })
 export class AboutComponent implements OnInit {
-  isMobileDevice = window.innerWidth < 920;
-  constructor() { }
+	isMobileDevice = window.innerWidth < 920;
 
-  ngOnInit(): void {
-  }
+	constructor() {
+	}
+
+	ngOnInit(): void {
+	}
 
 }
