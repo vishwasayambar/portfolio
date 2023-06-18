@@ -5,33 +5,33 @@
 			<h2 class="text-center fs-2">Work/Projects</h2>
 			<div class="d-flex justify-content-center">
 				<div class="example-button-row d-flex justify-content-center flex-wrap">
-					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
-							[ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
-							(click)="onChange('WebProjects')">
+					<button (click)="onChange('WebProjects')" [ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
+							class="btn-bg-primary px-3 m-1 rounded m-0"
+							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Web Projects
 					</button>
-					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
-							[ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
-							(click)="onChange('laravel')">
+					<button (click)="onChange('laravel')" [ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
+							class="btn-bg-primary px-3 m-1 rounded m-0"
+							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						laravel
 					</button>
-					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
-							[ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
-							(click)="onChange('Angular')">
+					<button (click)="onChange('Angular')" [ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
+							class="btn-bg-primary px-3 m-1 rounded m-0"
+							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Angular
 					</button>
-					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
-							[ngClass]="category === 'Blogs' ? 'active-btn-bg-primary' : ''"
-							(click)="onChange('Blogs')">
+					<button (click)="onChange('Blogs')" [ngClass]="category === 'Blogs' ? 'active-btn-bg-primary' : ''"
+							class="btn-bg-primary px-3 m-1 rounded m-0"
+							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Blogs
 					</button>
-					<button mat-button class="btn-bg-primary px-3 m-1 rounded m-0"
-							[ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
-							(click)="onChange('BasicWebApp')">
+					<button (click)="onChange('BasicWebApp')" [ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
+							class="btn-bg-primary px-3 m-1 rounded m-0"
+							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Basic Web App
 					</button>
@@ -39,38 +39,38 @@
 			</div>
 		</div>
 	</div>
-	<div class="container" [ngClass]="isMobileDevice ? '': 'w-75'">
+	<div [ngClass]="isMobileDevice ? '': 'w-75'" class="container">
 		<div [ngSwitch]="category">
-			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'WebProjects'">
-				<div class="d-flex align-items-center flex-column" *ngFor="let item of webProjects">
+			<div *ngSwitchCase="'WebProjects'" class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+				<div *ngFor="let item of webProjects" class="d-flex align-items-center flex-column">
 					<div class="card">
-						<img [src]="item.image" width="330" height="200" class="">
+						<img [src]="item.image" class="" height="200" width="330">
 						<div class="slider"></div>
-						<a href="#" class="link-icon"></a>
+						<a class="link-icon" href="#"></a>
 					</div>
 					<div class="card-detail">
 						<h4 class="text-center pt-2">{{item?.name}}</h4>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'Angular'">
-				<div class="d-flex align-items-center flex-column" *ngFor="let item of angular">
+			<div *ngSwitchCase="'Angular'" class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+				<div *ngFor="let item of angular" class="d-flex align-items-center flex-column">
 					<div class="card">
-						<img [src]="item.image" width="330" height="200" class="">
+						<img [src]="item.image" class="" height="200" width="330">
 						<div class="slider"></div>
-						<a href="#" class="link-icon"></a>
+						<a class="link-icon" href="#"></a>
 					</div>
 					<div class="card-detail">
 						<h4 class="text-center pt-2">{{item?.name}}</h4>
 					</div>
 				</div>
 			</div>
-			<div class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3" *ngSwitchCase="'Blogs'">
-				<div class="d-flex align-items-center flex-column" *ngFor="let item of blogs">
+			<div *ngSwitchCase="'Blogs'" class="row row-cols-1 row-cols-lg-3 g-2 g-lg-3">
+				<div *ngFor="let item of blogs" class="d-flex align-items-center flex-column">
 					<div class="card">
-						<img [src]="item.image" width="330" height="200" class="">
+						<img [src]="item.image" class="" height="200" width="330">
 						<div class="slider"></div>
-						<a href="#" class="link-icon"></a>
+						<a class="link-icon" href="#"></a>
 					</div>
 					<div class="card-detail">
 						<h4 class="text-center pt-2">{{item?.name}}</h4>

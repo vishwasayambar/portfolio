@@ -10,6 +10,8 @@ import { ContactUsService } from "../../module/shared/contact-us.service";
 })
 export class ContactComponent implements OnInit {
 	isMobileDevice = window.innerWidth < 920;
+	protected readonly eval = eval;
+	protected readonly event = event;
 
 	constructor(protected service: ContactUsService) {
 
@@ -26,7 +28,4 @@ export class ContactComponent implements OnInit {
 			Notify.failure(err);
 		});
 	}
-
-	protected readonly eval = eval;
-	protected readonly event = event;
 }

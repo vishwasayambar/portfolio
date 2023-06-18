@@ -4,13 +4,13 @@
 		<h2 class="text-center fs-2">Experience/Education</h2>
 		<div class="d-flex justify-content-center">
 			<div class="example-button-row">
-				<button mat-button class="btn-bg-primary m-1" (click)="onChange('Experience')"
-				[ngClass]="category === 'Experience' ? 'active-btn-bg-primary' : ''">
+				<button (click)="onChange('Experience')" [ngClass]="category === 'Experience' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
+						mat-button>
 					<mat-icon>favorite</mat-icon>
 					Experience
 				</button>
-				<button mat-button class="btn-bg-primary m-1" (click)="onChange('Education')"
-						[ngClass]="category === 'Education' ? 'active-btn-bg-primary' : ''">
+				<button (click)="onChange('Education')" [ngClass]="category === 'Education' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
+						mat-button>
 					<mat-icon>favorite</mat-icon>
 					Education
 				</button>
@@ -18,14 +18,14 @@
 		</div>
 	</div>
 </div>
-<ng-template [ngIf]="isMobileDevice" [ngIfElse]="isNotMobileDevice">
+<ng-template [ngIfElse]="isNotMobileDevice" [ngIf]="isMobileDevice">
 	<section *ngIf="category === 'Experience'">
-		<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
+		<div *ngFor="let item of defaultExperienceCards; index as i" class="container">
 			<div class="cards d-flex justify-content-evenly">
 				<div class="center-steep">
 					<div class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
-						<img src="assets/images/user.png" width="30" height="30">
+						<img height="30" src="assets/images/user.png" width="30">
 					</div>
 				</div>
 				<div class="right-card">
@@ -44,16 +44,16 @@
 					</ul>
 				</div>
 			</div>
-			<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
-				<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
+				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
 			</div>
 		</div>
-		<div class="d-flex justify-content-center" *ngIf="isView">
-			<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
+		<div *ngIf="isView" class="d-flex justify-content-center">
+			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 	<section *ngIf="category === 'Education'">
-		<div class="container" *ngFor="let item of defaultEducationCards; index as i">
+		<div *ngFor="let item of defaultEducationCards; index as i" class="container">
 			<div class="cards d-flex justify-content-evenly">
 				<div class="center-steep">
 					<div class="vertical-line"></div>
@@ -77,145 +77,145 @@
 					</ul>
 				</div>
 			</div>
-			<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
-				<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
+				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
 			</div>
 		</div>
-		<div class="d-flex justify-content-center" *ngIf="isView">
-			<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
+		<div *ngIf="isView" class="d-flex justify-content-center">
+			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 </ng-template>
 <ng-template #isNotMobileDevice>
-<section *ngIf="category === 'Experience'">
-	<div class="container" *ngFor="let item of defaultExperienceCards; index as i">
-		<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
-			<div class="left-card">
-				<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
-				<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
-				<ul class="text-muted">
-					<li>
-						{{item.desc[0]}}
-					</li>
-					<li>
-						{{item.desc[1]}}
-					</li>
-					<li>
-						{{item.desc[2]}}
-					</li>
-					<li>
-						{{item.desc[3]}}
-					</li>
-				</ul>
-			</div>
-			<div class="center-steep">
-				<div class="vertical-line"></div>
-				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="30" height="30">
+	<section *ngIf="category === 'Experience'">
+		<div *ngFor="let item of defaultExperienceCards; index as i" class="container">
+			<div *ngIf="item.isLeft" class="cards d-flex justify-content-evenly">
+				<div class="left-card">
+					<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
+					<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
+					<ul class="text-muted">
+						<li>
+							{{item.desc[0]}}
+						</li>
+						<li>
+							{{item.desc[1]}}
+						</li>
+						<li>
+							{{item.desc[2]}}
+						</li>
+						<li>
+							{{item.desc[3]}}
+						</li>
+					</ul>
+				</div>
+				<div class="center-steep">
+					<div class="vertical-line"></div>
+					<div class="fs-4 vertical-line-icon">
+						<img height="30" src="assets/images/user.png" width="30">
+					</div>
+				</div>
+				<div class="right-card">
+
 				</div>
 			</div>
-			<div class="right-card">
+			<div *ngIf="!item.isLeft" class="cards d-flex justify-content-evenly">
+				<div class="left-card">
 
-			</div>
-		</div>
-		<div class="cards d-flex justify-content-evenly" *ngIf="!item.isLeft">
-			<div class="left-card">
-
-			</div>
-			<div class="center-steep">
-				<div class="vertical-line"></div>
-				<div class="fs-4 vertical-line-icon">
-					<img src="assets/images/user.png" width="30" height="30">
+				</div>
+				<div class="center-steep">
+					<div class="vertical-line"></div>
+					<div class="fs-4 vertical-line-icon">
+						<img height="30" src="assets/images/user.png" width="30">
+					</div>
+				</div>
+				<div class="right-card">
+					<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
+					<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
+					<ul class="text-muted">
+						<li>
+							{{item.desc[0]}}
+						</li>
+						<li>
+							{{item.desc[1]}}
+						</li>
+						<li>
+							{{item.desc[2]}}
+						</li>
+						<li>
+							{{item.desc[3]}}
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="right-card">
-				<h3 class="ps-4 mb-1 fs-4">{{item.company}}</h3>
-				<p class="ps-4 text-muted">{{item.position}} | {{item.duration}} </p>
-				<ul class="text-muted">
-					<li>
-						{{item.desc[0]}}
-					</li>
-					<li>
-						{{item.desc[1]}}
-					</li>
-					<li>
-						{{item.desc[2]}}
-					</li>
-					<li>
-						{{item.desc[3]}}
-					</li>
-				</ul>
+			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
+				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
 			</div>
 		</div>
-		<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
-			<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+		<div *ngIf="isView" class="d-flex justify-content-center">
+			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
 		</div>
-	</div>
-	<div class="d-flex justify-content-center" *ngIf="isView">
-		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
-	</div>
-</section>
+	</section>
 
-<section *ngIf="category === 'Education'">
-	<div class="container" *ngFor="let item of defaultEducationCards; index as i">
-		<div class="cards d-flex justify-content-evenly" *ngIf="item.isLeft">
-			<div class="left-card">
-				<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
-				<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
-				<ul class="text-muted">
-					<li>
-						{{item.desc[0]}}
-					</li>
-					<li>
-						{{item.desc[1]}}
-					</li>
-					<li>
-						{{item.desc[2]}}
-					</li>
-				</ul>
-			</div>
-			<div class="center-steep">
-				<div class="vertical-line"></div>
-				<div class="fs-4 vertical-line-icon">
-					<i class="fa-solid fa-user-graduate"></i>
+	<section *ngIf="category === 'Education'">
+		<div *ngFor="let item of defaultEducationCards; index as i" class="container">
+			<div *ngIf="item.isLeft" class="cards d-flex justify-content-evenly">
+				<div class="left-card">
+					<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
+					<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
+					<ul class="text-muted">
+						<li>
+							{{item.desc[0]}}
+						</li>
+						<li>
+							{{item.desc[1]}}
+						</li>
+						<li>
+							{{item.desc[2]}}
+						</li>
+					</ul>
+				</div>
+				<div class="center-steep">
+					<div class="vertical-line"></div>
+					<div class="fs-4 vertical-line-icon">
+						<i class="fa-solid fa-user-graduate"></i>
+					</div>
+				</div>
+				<div class="right-card">
+
 				</div>
 			</div>
-			<div class="right-card">
+			<div *ngIf="!item.isLeft" class="cards d-flex justify-content-evenly">
+				<div class="left-card">
 
-			</div>
-		</div>
-		<div class="cards d-flex justify-content-evenly" *ngIf="!item.isLeft">
-			<div class="left-card">
-
-			</div>
-			<div class="center-steep">
-				<div class="vertical-line"></div>
-				<div class="fs-4 vertical-line-icon">
-					<i class="fa-solid fa-user-graduate"></i>
+				</div>
+				<div class="center-steep">
+					<div class="vertical-line"></div>
+					<div class="fs-4 vertical-line-icon">
+						<i class="fa-solid fa-user-graduate"></i>
+					</div>
+				</div>
+				<div class="right-card">
+					<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
+					<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
+					<ul class="text-muted">
+						<li>
+							{{item.desc[0]}}
+						</li>
+						<li>
+							{{item.desc[1]}}
+						</li>
+						<li>
+							{{item.desc[2]}}
+						</li>
+					</ul>
 				</div>
 			</div>
-			<div class="right-card">
-				<h3 class="ps-4 mb-1 fs-4">{{item.institute}}</h3>
-				<p class="ps-4 text-muted">{{item.degree}} | {{item.duration}}</p>
-				<ul class="text-muted">
-					<li>
-						{{item.desc[0]}}
-					</li>
-					<li>
-						{{item.desc[1]}}
-					</li>
-					<li>
-						{{item.desc[2]}}
-					</li>
-				</ul>
+			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
+				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
 			</div>
 		</div>
-		<div class="d-flex justify-content-center" *ngIf="!isView && i === 1">
-			<button class="btn btn-warning btn-sm" (click)="isViewALlExperience()">view All</button>
+		<div *ngIf="isView" class="d-flex justify-content-center">
+			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
 		</div>
-	</div>
-	<div class="d-flex justify-content-center" *ngIf="isView">
-		<button class="btn btn-warning btn-sm" (click)="isCloseALlExperience()">Okey, I got it</button>
-	</div>
-</section>
+	</section>
 </ng-template>

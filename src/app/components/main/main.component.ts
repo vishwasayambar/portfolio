@@ -9,13 +9,13 @@ export class MainComponent implements OnInit {
 	isMobileDevice = window.innerWidth < 920;
 	developerNames = ["Frontend Developer", "Backend Developer", "Fullstack Developer",];
 	currentTextIndex = 0; // Current Text Index of the Array
-	displayText = ''; // Text to display
+	displayText = ""; // Text to display
 
 	constructor() {
 	}
 
 	ngOnInit(): void {
-      this.typeEffect();
+		this.typeEffect();
 	}
 
 	typeEffect() {
@@ -26,8 +26,9 @@ export class MainComponent implements OnInit {
 		const typewritingEffect = setInterval(() => {
 			if (i < currentTextLength) {
 				this.displayText += currentText.substring(i, i + 1);
-				if(this.displayText.length === currentTextLength) {
-					setTimeout(() =>{},200);
+				if (this.displayText.length === currentTextLength) {
+					setTimeout(() => {
+					}, 200);
 				}
 				i++;
 			} else {
@@ -38,7 +39,7 @@ export class MainComponent implements OnInit {
 						this.currentTextIndex = 0;
 					}
 					this.typeEffect();
-					this.displayText = '';
+					this.displayText = "";
 				}, 2000);
 			}
 		}, 100);

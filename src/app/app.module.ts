@@ -3,20 +3,20 @@ import { HttpClientModule } from "@angular/common/http";
 import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { BrowserModule } from "@angular/platform-browser";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { MainComponent } from "./components/main/main.component";
 import { AboutComponent } from "./components/about/about.component";
-import { ExperianceComponent } from "./components/experiance/experiance.component";
 import { ContactComponent } from "./components/contact/contact.component";
+import { ExperianceComponent } from "./components/experiance/experiance.component";
 import { FooterComponent } from "./components/footer/footer.component";
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HomeComponent } from "./components/home/home.component";
+import { MainComponent } from "./components/main/main.component";
+import { ProjectsComponent } from "./components/projects/projects.component";
 import { ResumeComponent } from "./components/resume/resume.component";
-import { AngularMaterialModule } from "./module/angular-material/angular-material.module";
 import { SkillsComponent } from "./components/skills/skills.component";
 import { SocialComponent } from "./components/social/social.component";
-import { ProjectsComponent } from "./components/projects/projects.component";
-import { HomeComponent } from './components/home/home.component';
+import { AngularMaterialModule } from "./module/angular-material/angular-material.module";
 
 
 @NgModule({
@@ -31,8 +31,8 @@ import { HomeComponent } from './components/home/home.component';
 		SocialComponent,
 		ProjectsComponent,
 		ContactComponent,
-  		ResumeComponent,
-    	HomeComponent
+		ResumeComponent,
+		HomeComponent
 	],
 	imports: [
 		BrowserModule,

@@ -4,10 +4,10 @@
 </div>
 <div class="container my-5">
 	<div class="container-fluid d-flex justify-content-evenly">
-		<div class="image-container" *ngIf="!isMobileDevice">
-			<img src="/assets/images/contact.png" alt="contact us">
+		<div *ngIf="!isMobileDevice" class="image-container">
+			<img alt="contact us" src="/assets/images/contact.png">
 		</div>
-		<div class="form-container" [ngClass]="isMobileDevice ? 'p-2': 'p-5 w-50'">
+		<div [ngClass]="isMobileDevice ? 'p-2': 'p-5 w-50'" class="form-container">
 			<div class="form-head">
 				<h3 class="fs-3">Get in touch</h3>
 				<p class="text-muted">My inbox is always open. Whether you have a question or just want to say hello,
@@ -15,31 +15,31 @@
 			</div>
 			<form #contactForm="ngForm" (ngSubmit)="save(contactForm.value)">
 				<div class="mb-3">
-					<input type="text" class="form-control bg-light border-0" id="name" aria-describedby="nameHelp"
-						   placeholder="Full Name" ngModel name="name" required>
+					<input aria-describedby="nameHelp" class="form-control bg-light border-0" id="name" name="name"
+						   ngModel placeholder="Full Name" required type="text">
 					<!--					<div id="nameHelp" class="form-text">We'll never share your email with anyone else.</div>-->
-					<div class="ms-3 text-danger"
-						 *ngIf="contactForm.controls.name?.invalid && contactForm.controls.name?.touched">
+					<div *ngIf="contactForm.controls.name?.invalid && contactForm.controls.name?.touched"
+						 class="ms-3 text-danger">
 						Name is required.
 					</div>
 				</div>
 				<div class="mb-3">
-					<input type="email" class="form-control bg-light border-0" placeholder="Email" required email
-						   id="exampleInputEmail1" ngModel name="email" aria-describedby="emailHelp">
+					<input aria-describedby="emailHelp" class="form-control bg-light border-0" email id="exampleInputEmail1" name="email"
+						   ngModel placeholder="Email" required type="email">
 					<!--					<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>-->
-					<div class="ms-3 text-danger"
-						 *ngIf="contactForm.controls.email?.invalid && contactForm.controls.email?.touched">
+					<div *ngIf="contactForm.controls.email?.invalid && contactForm.controls.email?.touched"
+						 class="ms-3 text-danger">
 						Email is required and should be valid.
 					</div>
 				</div>
 				<div class="mb-3">
-					<textarea class="form-control bg-light border-0" ngModel name="message"
-							  placeholder="Leave a Message here" id="floatingTextarea2"
+					<textarea class="form-control bg-light border-0" id="floatingTextarea2" name="message"
+							  ngModel placeholder="Leave a Message here"
 							  style="height: 100px"></textarea>
 				</div>
-				<button type="submit" class="btn btn-theme submit-btn float-end" [disabled]="!contactForm.valid">Say
+				<button [disabled]="!contactForm.valid" class="btn btn-theme submit-btn float-end" type="submit">Say
 					Hello
-					<span><img src="assets/images/waving-hand.gif" width="20" height="20"></span>
+					<span><img height="20" src="assets/images/waving-hand.gif" width="20"></span>
 				</button>
 			</form>
 		</div>

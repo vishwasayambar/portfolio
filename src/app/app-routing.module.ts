@@ -1,23 +1,24 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './components/home/home.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./components/home/home.component";
 import { ResumeComponent } from "./components/resume/resume.component";
 
 const routes: Routes = [
-  {
-    path: '',
-    component: HomeComponent,
-    // pathMatch: "full",
-  },
-  {
-    path: 'resume',
-    component: ResumeComponent,
-    // pathMatch: "full",
-  }
+	{
+		path: "",
+		component: HomeComponent,
+		// pathMatch: "full",
+	},
+	{
+		path: "resume",
+		component: ResumeComponent,
+		// pathMatch: "full",
+	}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&family=Reenie+Beanie&display=swap');
 
-.navbar-brand{
+.navbar-brand {
 	font-family: 'Reenie Beanie', cursive;
 	}
+
 .example-spacer {
 	flex: 1 1 auto;
 	}
 
-.navbar{
-		backdrop-filter: blur(8px);
+.navbar {
+	backdrop-filter: blur(8px);
 	}
-.section{
+
+.section {
 	background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
 	}
 
@@ -31,19 +33,18 @@
 	cursor: pointer;
 	border-radius: 50%;
 	align-items: center;
-	justify-content:center;
+	justify-content: center;
 	text-decoration: none;
 	}
 
-.floating-btn a:hover{
+.floating-btn a:hover {
 	transform: scale(1.2, 1.2);
 	background-color: #ffe6fb;
 	
-	& i{
+	& i {
 		color: rgb(186 46 212 / 93%);
 		}
 	}
-
 
 /* Adjust the icon styles as per your preference */
 .floating-btn i {
