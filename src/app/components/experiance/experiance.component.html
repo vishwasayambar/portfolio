@@ -4,12 +4,14 @@
 		<h2 class="text-center fs-2">Experience/Education</h2>
 		<div class="d-flex justify-content-center">
 			<div class="example-button-row">
-				<button (click)="onChange('Experience')" [ngClass]="category === 'Experience' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
+				<button (click)="onChange('Experience')"
+						[ngClass]="category === 'Experience' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
 						mat-button>
 					<mat-icon>favorite</mat-icon>
 					Experience
 				</button>
-				<button (click)="onChange('Education')" [ngClass]="category === 'Education' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
+				<button (click)="onChange('Education')"
+						[ngClass]="category === 'Education' ? 'active-btn-bg-primary' : ''" class="btn-bg-primary m-1"
 						mat-button>
 					<mat-icon>favorite</mat-icon>
 					Education

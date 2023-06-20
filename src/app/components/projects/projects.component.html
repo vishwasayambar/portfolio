@@ -5,19 +5,22 @@
 			<h2 class="text-center fs-2">Work/Projects</h2>
 			<div class="d-flex justify-content-center">
 				<div class="example-button-row d-flex justify-content-center flex-wrap">
-					<button (click)="onChange('WebProjects')" [ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
+					<button (click)="onChange('WebProjects')"
+							[ngClass]="category === 'WebProjects' ? 'active-btn-bg-primary' : ''"
 							class="btn-bg-primary px-3 m-1 rounded m-0"
 							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Web Projects
 					</button>
-					<button (click)="onChange('laravel')" [ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
+					<button (click)="onChange('laravel')"
+							[ngClass]="category === 'laravel' ? 'active-btn-bg-primary' : ''"
 							class="btn-bg-primary px-3 m-1 rounded m-0"
 							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						laravel
 					</button>
-					<button (click)="onChange('Angular')" [ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
+					<button (click)="onChange('Angular')"
+							[ngClass]="category === 'Angular' ? 'active-btn-bg-primary' : ''"
 							class="btn-bg-primary px-3 m-1 rounded m-0"
 							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
@@ -29,7 +32,8 @@
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
 						Blogs
 					</button>
-					<button (click)="onChange('BasicWebApp')" [ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
+					<button (click)="onChange('BasicWebApp')"
+							[ngClass]="category === 'BasicWebApp' ? 'active-btn-bg-primary' : ''"
 							class="btn-bg-primary px-3 m-1 rounded m-0"
 							mat-button>
 						<mat-icon *ngIf="!isMobileDevice">favorite</mat-icon>
