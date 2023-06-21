@@ -1,7 +1,7 @@
 {
   "name": "Vishwa",
   "short_name": "vishwa",
-  "theme_color": "#1976d2",
+  "theme_color": "#8c1dd2ed",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
