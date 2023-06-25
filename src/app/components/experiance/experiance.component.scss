@@ -56,13 +56,17 @@
 	z-index: 2;
 	}
 
+.dark-theme-vertical-line {
+	background-color: #f9322c;
+	}
+
 .vertical-line-icon {
 	position: absolute;
 	top: 44%;
 	right: -24px;
 	opacity: 1000;
 	z-index: 1000;
-	background: #dca2f7;
+	background: #f9322c;
 	height: 45px;
 	width: 45px;
 	display: flex;

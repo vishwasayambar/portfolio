@@ -13,7 +13,7 @@
 	}
 
 .section {
-	background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
+	//background: url('/assets/images/herobgc.jpg') center center / cover no-repeat;
 	}
 
 .floating-btn {
@@ -42,17 +42,18 @@
 	background-color: #ffe6fb;
 	
 	& i {
-		color: rgb(186 46 212 / 93%);
+		color: #ff6666;
 		}
 	}
 
 /* Adjust the icon styles as per your preference */
 .floating-btn i {
-	color: #8c1dd2ed;
+	color: #f9322c;
 	font-size: 20px;
 	}
 
 .nav-link:hover {
-	background-color: #ffe6fb;
+	background-color: #faf7f7;
 	border-radius: 5px;
 	}
+

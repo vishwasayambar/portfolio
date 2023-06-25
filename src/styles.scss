@@ -26,12 +26,33 @@ $portfolio-theme: mat.define-light-theme((
 				warn: $portfolio-warn,
 		)
 ));
+//
+//$theme-color: #8c1dd2ed;
+//$theme-btn-color: #8c1dd2ed;
+//$theme-bg-color: #e9e2e7;
+//$theme-bg-hover-color: #ffe6fb;
+//$theme-btn-hover-color: rgb(186 46 212 / 93%);
 
-$theme-color: #8c1dd2ed;
-$theme-btn-color: #8c1dd2ed;
-$theme-bg-color: #e9e2e7;
-$theme-bg-hover-color: #ffe6fb;
-$theme-btn-hover-color: rgb(186 46 212 / 93%);
+//Light Theme Color scheme
+$theme-color: #F9322C;
+$theme-btn-color: #F9322C;
+$theme-bg-color: #faf7f7;
+$theme-bg-hover-color: #faf7f7;
+$theme-btn-hover-color: #ff6666;
+
+//Dark Theme Color scheme
+
+$dark-theme-color: #F9322C;
+$dark-theme-btn-color: #F9322C;
+$dark-theme-bg-color: #171923;
+$dark-theme-bg-hover-color: #171923;
+$dark-theme-text-color: #faf7f7;
+$dark-theme-btn-hover-color: #ff6666;
+
+.dark-theme{
+	background-color: $dark-theme-bg-color;
+	color:$dark-theme-text-color !important;
+	}
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
@@ -59,15 +80,15 @@ body {
 	}
 
 .theme-color {
-	color: #8c1dd2ed;
+	color: $theme-color;
 	}
 
 .btn-theme {
-	color: white;
-	background: #8c1dd2ed;
+	color: $theme-bg-color;
+	background: $theme-color;
 	
 	& a {
-		color: white;
+		color: $theme-bg-color;
 		text-decoration: none;
 		font-size: 15px !important;
 		}
@@ -78,21 +99,21 @@ body {
 	}
 
 .btn-outline-theme {
-	color: #8c1dd2ed;
-	border: 1px solid #8c1dd2ed;
+	color: $theme-color;
+	border: 1px solid $theme-color;
 	
 	& a {
-		color: #8c1dd2ed;
+		color: $theme-color;
 		text-decoration: none;
 		font-size: 15px !important;
 		}
 	
 	&:hover {
 		background: $theme-btn-hover-color;
-		color: white;
+		color: $theme-bg-color;
 		
 		a {
-			color: white;
+			color: $theme-bg-color;
 			}
 		}
 	}
@@ -102,31 +123,52 @@ body {
 	}
 
 .btn-bg-primary {
-	color: #8c1dd2ed;
-	border: 1px solid #8c1dd2ed !important;
+	color: $theme-color;
+	border: 1px solid $theme-color !important;
 	}
 
 .active-btn-bg-primary {
-	background-color: #8c1dd2ed;
-	color: #ffffff;
+	background-color: $theme-color;
+	color: $theme-bg-color;
 	}
 
 .text-theme {
-	color: #8c1dd2ed;
+	color: $theme-color;
 	}
 
 .progress-bar {
-	background-color: #b20dfd69;
+	background-color: #ff6666;
 	}
 
-.theme-badge {
+.light-theme-badge {
 	padding: 5px 9px;
-	background-color: #f7e7ff38;
-	border: 1px solid #bc40fa38;
-	color: #a329ab;
+	border: 1px solid #F9322C;
+	color: #F9322C;
 	border-radius: 3px;
 	
 	&:hover {
 		background-color: #f1d8ff;
+		}
+	}
+
+.dark-theme-badge {
+	padding: 5px 9px;
+	border: 1px solid #F9322C;
+	color: #F9322C;
+	border-radius: 3px;
+	
+	&:hover {
+		background-color: #060505;
+		font-weight: 500;
+		}
+	}
+
+.dark-theme-text{
+	color: white;
+	p,ul {
+		color: #ffffff !important;
+		}
+	h3{
+		color: #F9322C !important;
 		}
 	}

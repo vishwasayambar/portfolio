@@ -21,13 +21,13 @@
 	</div>
 </div>
 <ng-template [ngIfElse]="isNotMobileDevice" [ngIf]="isMobileDevice">
-	<section *ngIf="category === 'Experience'">
+	<section *ngIf="category === 'Experience'" [ngClass]="isDark ? 'dark-theme-text' : ''">
 		<div *ngFor="let item of defaultExperienceCards; index as i" class="container">
 			<div class="cards d-flex justify-content-evenly">
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
-						<img height="30" src="assets/images/user.png" width="30">
+						<i class="fa-solid fa-user-tie"></i>
 					</div>
 				</div>
 				<div class="right-card">
@@ -47,18 +47,18 @@
 				</div>
 			</div>
 			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
-				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
+				<button (click)="isViewALlExperience()" class="btn btn-theme btn-sm">view All</button>
 			</div>
 		</div>
 		<div *ngIf="isView" class="d-flex justify-content-center">
-			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
+			<button (click)="isCloseALlExperience()" class="btn btn-theme btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 	<section *ngIf="category === 'Education'">
 		<div *ngFor="let item of defaultEducationCards; index as i" class="container">
 			<div class="cards d-flex justify-content-evenly">
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
 						<i class="fa-solid fa-user-graduate"></i>
 					</div>
@@ -80,16 +80,16 @@
 				</div>
 			</div>
 			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
-				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
+				<button (click)="isViewALlExperience()" class="btn btn-theme btn-sm">view All</button>
 			</div>
 		</div>
 		<div *ngIf="isView" class="d-flex justify-content-center">
-			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
+			<button (click)="isCloseALlExperience()" class="btn btn-theme btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 </ng-template>
 <ng-template #isNotMobileDevice>
-	<section *ngIf="category === 'Experience'">
+	<section *ngIf="category === 'Experience'" [ngClass]="isDark ? 'dark-theme-text' : ''">
 		<div *ngFor="let item of defaultExperienceCards; index as i" class="container">
 			<div *ngIf="item.isLeft" class="cards d-flex justify-content-evenly">
 				<div class="left-card">
@@ -111,9 +111,9 @@
 					</ul>
 				</div>
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
-						<img height="30" src="assets/images/user.png" width="30">
+						<i class="fa-solid fa-user-tie"></i>
 					</div>
 				</div>
 				<div class="right-card">
@@ -125,9 +125,9 @@
 
 				</div>
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
-						<img height="30" src="assets/images/user.png" width="30">
+						<i class="fa-solid fa-user-tie"></i>
 					</div>
 				</div>
 				<div class="right-card">
@@ -150,11 +150,11 @@
 				</div>
 			</div>
 			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
-				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
+				<button (click)="isViewALlExperience()" class="btn btn-theme btn-sm">view All</button>
 			</div>
 		</div>
 		<div *ngIf="isView" class="d-flex justify-content-center">
-			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
+			<button (click)="isCloseALlExperience()" class="btn btn-theme btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 
@@ -177,7 +177,7 @@
 					</ul>
 				</div>
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
 						<i class="fa-solid fa-user-graduate"></i>
 					</div>
@@ -191,7 +191,7 @@
 
 				</div>
 				<div class="center-steep">
-					<div class="vertical-line"></div>
+					<div [ngClass]="isDark ? 'dark-theme-vertical-line' : ''" class="vertical-line"></div>
 					<div class="fs-4 vertical-line-icon">
 						<i class="fa-solid fa-user-graduate"></i>
 					</div>
@@ -213,11 +213,11 @@
 				</div>
 			</div>
 			<div *ngIf="!isView && i === 1" class="d-flex justify-content-center">
-				<button (click)="isViewALlExperience()" class="btn btn-warning btn-sm">view All</button>
+				<button (click)="isViewALlExperience()" class="btn btn-theme btn-sm">view All</button>
 			</div>
 		</div>
 		<div *ngIf="isView" class="d-flex justify-content-center">
-			<button (click)="isCloseALlExperience()" class="btn btn-warning btn-sm">Okey, I got it</button>
+			<button (click)="isCloseALlExperience()" class="btn btn-theme btn-sm">Okey, I got it</button>
 		</div>
 	</section>
 </ng-template>

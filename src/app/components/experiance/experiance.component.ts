@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from "@angular/core";
+import { SharedService } from "../../module/shared/services/shared.service";
 
 @Component({
 	selector: "app-experiance",
@@ -14,8 +15,12 @@ export class ExperianceComponent implements OnInit {
 	category = "Experience";
 	defaultExperienceCards = [];
 	defaultEducationCards = [];
+	isDark = true;
 
-	constructor() {
+	constructor(private service: SharedService) {
+		this.service.isDark$.subscribe(isDark => {
+			this.isDark = isDark;
+		});
 	}
 
 	ngOnInit(): void {

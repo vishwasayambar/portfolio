@@ -1,4 +1,4 @@
-<section class="card border-0">
+<section [ngClass]="isDark ? 'dark-theme' : '' " class="card border-0">
 	<div class="container-fluid d-flex justify-content-center my-5 flex-wrap">
 		<div class="img d-flex align-items-center justify-content-center ">
 			<div class="self-img">
@@ -38,7 +38,7 @@
 	</div>
 	<div class="container">
 		<hr class="my-3">
-		<div [ngClass]="isMobileDevice ? '': 'w-50'" class="container-fluid card border-0">
+		<div [ngClass]="{'w-50' : !isMobileDevice, 'dark-theme' : isDark}" class="container-fluid card border-0">
 			<h3 class="text-center fs-3">Coding Skills</h3>
 			<div class="slide-1">
 				<p class="ps-2">Angular</p>

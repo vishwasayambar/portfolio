@@ -1,50 +1,66 @@
-<div class="section">
-	<nav class="navbar navbar-expand-lg sticky-top  ">
-		<div [ngClass]="isMobileDevice ? 'justify-content-between px-3': 'justify-content-around'"
-			 class="container-fluid">
-			<a class="navbar-brand fs-3 " href="/">< Vishwajit Sayambar /></a>
-			<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
-					class="navbar-toggler" data-bs-target="#navbarSupportedContent"
-					data-bs-toggle="collapse" type="button">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
-					<li class="nav-item p-2">
-						<a class="nav-link" href="#about">About</a>
-					</li>
-					<li class="nav-item p-2">
-						<a class="nav-link" href="/resume">Resume</a>
-					</li>
-					<li class="nav-item p-2">
-						<a class="nav-link" href="#skill">Skills</a>
-					</li>
-					<li class="nav-item p-2">
-						<a class="nav-link" href="#project">Projects</a>
-					</li>
-					<li class="nav-item p-2">
-						<a class="nav-link" href="#experience">Experience</a>
-					</li>
-					<li class="nav-item p-2">
-						<a class="nav-link" href="#contact">Contact</a>
-					</li>
-				</ul>
+<section [ngClass]="isDark ? 'dark-theme' : '' ">
+	<div class="section">
+		<nav class="navbar navbar-expand-lg sticky-top">
+			<div [ngClass]="isMobileDevice ? 'justify-content-between': 'justify-content-around'"
+				 class="container-fluid">
+				<a [ngClass]="isDark ? 'text-danger' : '' " class="navbar-brand fs-3 " href="/">< Vishwajit Sayambar
+					/></a>
+				<div (click)="toggleTheme()" *ngIf="isMobileDevice" class="theme-btn">
+					<img *ngIf="isDark" alt="theme btn" height="30" src="assets/theme/sun.png" width="30">
+					<img *ngIf="!isDark" alt="theme btn" height="30" src="assets/theme/moon.png" width="30">
+				</div>
+				<button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+						class="navbar-toggler" data-bs-target="#navbarSupportedContent"
+						data-bs-toggle="collapse" type="button">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end flex-grow-0" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0 fs-5">
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link" href="#about">About</a>
+						</li>
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link" href="/resume">Resume</a>
+						</li>
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link" href="#skill">Skills</a>
+						</li>
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link"
+							   href="#project">Projects</a>
+						</li>
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link" href="#experience">Experience</a>
+						</li>
+						<li class="nav-item p-2">
+							<a [ngClass]="isDark ? 'dark-theme-text' : '' " class="nav-link" href="#contact">Contact</a>
+						</li>
+						<li class="nav-item p-2 d-flex align-items-center">
+							<div (click)="toggleTheme()" *ngIf="!isMobileDevice" class="theme-btn">
+								<img *ngIf="isDark" alt="theme btn" height="30" src="assets/theme/sun.png" width="30">
+								<img *ngIf="!isDark" alt="theme btn" height="25" src="assets/theme/moon.png" width="25">
+							</div>
+						</li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</nav>
-	<router-outlet></router-outlet>
-	<app-footer></app-footer>
-</div>
-<div *ngIf="!isMobileDevice" class="floating-btn">
-	<div class="btn-1"><a href="https://twitter.com/vishwaSayambar" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+		</nav>
+
+		<router-outlet></router-outlet>
+		<app-footer></app-footer>
 	</div>
-	<div class="btn-2"><a href="https://www.linkedin.com/in/vishwajit-sayambar/" target="_blank"><i
-			class="fa-brands fa-linkedin-in"></i></a></div>
-	<div class="btn-3"><a href="https://github.com/vishwasayambar" target="_blank"><i
-			class="fa-brands fa-github"></i></a></div>
-	<div class="btn-3"><a href="tel:+918459987661"><i class="fa-solid fa-phone"></i></a></div>
-	<div class="btn-4"><a href="https://medium.com/@vishwajitsayambar" target="_blank"><i
-			class="fa-brands fa-medium"></i></a></div>
-	<div class="btn-4"><a href="https://www.instagram.com/vishwasayambar/" target="_blank"><i
-			class="fa-brands fa-instagram"></i></a></div>
-</div>
+	<div *ngIf="!isMobileDevice" class="floating-btn">
+		<div class="btn-1"><a href="https://twitter.com/vishwaSayambar" target="_blank"><i
+				class="fa-brands fa-twitter"></i></a>
+		</div>
+		<div class="btn-2"><a href="https://www.linkedin.com/in/vishwajit-sayambar/" target="_blank"><i
+				class="fa-brands fa-linkedin-in"></i></a></div>
+		<div class="btn-3"><a href="https://github.com/vishwasayambar" target="_blank"><i
+				class="fa-brands fa-github"></i></a></div>
+		<div class="btn-3"><a href="tel:+918459987661"><i class="fa-solid fa-phone"></i></a></div>
+		<div class="btn-4"><a href="https://medium.com/@vishwajitsayambar" target="_blank"><i
+				class="fa-brands fa-medium"></i></a></div>
+		<div class="btn-4"><a href="https://www.instagram.com/vishwasayambar/" target="_blank"><i
+				class="fa-brands fa-instagram"></i></a></div>
+	</div>
+</section>

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { SharedService } from "../../module/shared/services/shared.service";
 
 @Component({
 	selector: "app-about",
@@ -7,8 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class AboutComponent implements OnInit {
 	isMobileDevice = window.innerWidth < 920;
+	isDark;
 
-	constructor() {
+	constructor(private service: SharedService) {
+		this.service.isDark$.subscribe(isDark => {
+			this.isDark = isDark;
+		});
 	}
 
 	ngOnInit(): void {

@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { SharedService } from "../../module/shared/services/shared.service";
 
 @Component({
 	selector: "app-main",
@@ -10,11 +11,15 @@ export class MainComponent implements OnInit {
 	developerNames = ["Frontend Developer", "Backend Developer", "Fullstack Developer",];
 	currentTextIndex = 0; // Current Text Index of the Array
 	displayText = ""; // Text to display
+	isDark = false;
 
-	constructor() {
+	constructor(protected service: SharedService) {
 	}
 
 	ngOnInit(): void {
+		this.service.isDark$.subscribe(isDark => {
+			this.isDark = isDark;
+		});
 		this.typeEffect();
 	}
 

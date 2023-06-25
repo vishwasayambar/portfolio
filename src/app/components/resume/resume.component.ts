@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { SharedService } from "../../module/shared/services/shared.service";
 
 @Component({
 	selector: "app-resume",
@@ -7,8 +8,12 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ResumeComponent implements OnInit {
 	isMobileDevice = window.innerWidth < 920;
+	isDark;
 
-	constructor() {
+	constructor(protected sharedService: SharedService) {
+		sharedService.isDark$.subscribe(response => {
+			this.isDark = response;
+		});
 	}
 
 	ngOnInit(): void {
