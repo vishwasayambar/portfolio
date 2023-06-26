@@ -54,7 +54,7 @@
 			<button (click)="isCloseALlExperience()" class="btn btn-theme btn-sm">Okey, I got it</button>
 		</div>
 	</section>
-	<section *ngIf="category === 'Education'">
+	<section *ngIf="category === 'Education'" [ngClass]="isDark ? 'dark-theme-text' : ''">
 		<div *ngFor="let item of defaultEducationCards; index as i" class="container">
 			<div class="cards d-flex justify-content-evenly">
 				<div class="center-steep">
@@ -158,7 +158,7 @@
 		</div>
 	</section>
 
-	<section *ngIf="category === 'Education'">
+	<section *ngIf="category === 'Education'" [ngClass]="isDark ? 'dark-theme-text' : ''">
 		<div *ngFor="let item of defaultEducationCards; index as i" class="container">
 			<div *ngIf="item.isLeft" class="cards d-flex justify-content-evenly">
 				<div class="left-card">
